@@ -1,0 +1,9 @@
+boto3
+matplotlib
+numpy
+pandas
+ripser
+scikit-learn
+scipy
+seaborn
+tqdm
