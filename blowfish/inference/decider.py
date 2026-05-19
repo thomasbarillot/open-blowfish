@@ -18,15 +18,33 @@ from typing import List
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KernelDensity
-import shap
 from blowfish.utils.constants import DEFAULT_KDE_FEATURES
 
-import warnings
-warnings.filterwarnings('ignore')
+
+def _import_shap():
+    try:
+        import shap
+    except ImportError as e:
+        raise ImportError(
+            "FeedbackDecider requires the optional 'shap' dependency. "
+            "Install with: pip install 'blowfish[explain]' or pip install shap"
+        ) from e
+    return shap
+
+
+def _kde_binary_log_proba_col0_row(kde: KernelDensity, row: np.ndarray) -> float:
+    """Log P(y=1 | x) from joint KDE over [y, x]; row shape (1, n_features) with col0 = y."""
+    y_one = np.concatenate([np.ones((row.shape[0], 1), dtype=row.dtype), row[:, 1:]], axis=1)
+    y_zero = np.concatenate([np.zeros((row.shape[0], 1), dtype=row.dtype), row[:, 1:]], axis=1)
+    log_p1 = kde.score_samples(y_one)
+    log_p0 = kde.score_samples(y_zero)
+    return log_p1 - np.logaddexp(log_p1, log_p0)
+
 
 class FeedbackDecider():
     
     def __init__(self, kde: KernelDensity, kde_features_order: List[str] = DEFAULT_KDE_FEATURES):
+        shap = _import_shap()
         self.KDE = kde
         self.high_accuracy_samples = self.get_high_accuracy_samples()
         self.explainer = shap.KernelExplainer(self.KDE_prediction, self.high_accuracy_samples)
@@ -41,12 +59,8 @@ class FeedbackDecider():
         while len(feat_samples) < num_samples:
             sample = self.KDE.sample(n_samples=1)
             if np.round(sample[0][0]) == 1.0:
-                neg_sample = np.copy(sample)
-                pos_sample = np.copy(sample)
-                neg_sample[0,0] = 0.0
-                pos_sample[0,0] = 1.0
-
-                proba = np.exp(self.KDE.score(sample))/(np.exp(self.KDE.score(sample)) + np.exp(self.KDE.score(neg_sample)))
+                logp = _kde_binary_log_proba_col0_row(self.KDE, sample)
+                proba = np.exp(logp)[0]
                 if proba > 0.8:
                     feat_samples.append(sample[0][1:])
 
@@ -56,12 +70,11 @@ class FeedbackDecider():
         """
             Get the probability score for the sample from a given KDE
         """
-        X_test = np.ones(sample.shape[0])
-        X_test0 = 1 - X_test
-        proba = np.exp(self.KDE.score_samples(np.concatenate([X_test[:,np.newaxis], sample],axis=1)))/\
-                (np.exp(self.KDE.score_samples(np.concatenate([X_test[:,np.newaxis], sample],axis=1)))
-                 + np.exp(self.KDE.score_samples(np.concatenate([X_test0[:,np.newaxis], sample],axis=1))))
-        return proba
+        X_one = np.concatenate([np.ones((sample.shape[0], 1), dtype=sample.dtype), sample], axis=1)
+        X_zero = np.concatenate([np.zeros((sample.shape[0], 1), dtype=sample.dtype), sample], axis=1)
+        log_p1 = self.KDE.score_samples(X_one)
+        log_p0 = self.KDE.score_samples(X_zero)
+        return np.exp(log_p1 - np.logaddexp(log_p1, log_p0))
     
     def explain_query(self, 
                       query_features: pd.DataFrame, 
@@ -87,8 +100,8 @@ class FeedbackDecider():
         
         if "top_k_topic_spread" in relevant_features:
             return "topicspread"
-        elif "docspread" in relevant_features:
-            return "top_k_doc_spread"
+        elif "top_k_doc_spread" in relevant_features:
+            return "docspread"
         else:
             return "dataspread"
             

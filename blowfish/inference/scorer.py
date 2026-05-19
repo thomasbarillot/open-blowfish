@@ -17,21 +17,23 @@ limitations under the License.
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KernelDensity
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 from blowfish.utils.constants import DEFAULT_KDE_FEATURES
 from blowfish.calculations import calculate_relevant_features
 
-import warnings
-warnings.filterwarnings('ignore')
-
 class AmbiguityScorer():
-    def __init__(self, 
+    def __init__(self,
                  kde: KernelDensity,
                  topics_df: pd.DataFrame,
-                 indexes = ["docname"]):
+                 indexes = ["docname"],
+                 epsilon: Optional[float] = None):
         self.indexes = indexes
         self.ProbaDensityKernel = kde
+        #: Paper Eq. (1) ε neighborhood (TASK-004). ``None`` preserves the
+        #: pre-TASK-004 single-scale VR behavior; a positive float filters
+        #: neighbors with ``||Δv_iq|| / ||Δv_0q|| <= epsilon`` before VR.
+        self.epsilon = epsilon
         topics = topics_df
         self.topics = self.format_topics(topics)
         
@@ -42,6 +44,12 @@ class AmbiguityScorer():
         try:
             required_columns = ["docname", "chunk_embedding", "label", "silhouette_score", "hash_key"]
             assert all([c in topics_df.columns for c in required_columns])
+            if not topics_df["hash_key"].is_unique:
+                dup = topics_df["hash_key"][topics_df["hash_key"].duplicated()].tolist()
+                raise ValueError(
+                    "topics_df must have unique hash_key values; duplicates will break lookups. "
+                    f"Example duplicate keys: {dup[:5]}"
+                )
 
             topics = topics_df.assign(cluster_id=  [f"{d}_{l}" for d,l in zip(topics_df.docname.tolist(),topics_df.label.tolist())])
             topics = topics.set_index(self.indexes)
@@ -90,17 +98,17 @@ class AmbiguityScorer():
         sample_correct = sample_correct[:self.ProbaDensityKernel.n_features_in_]
         sample_incorrect = sample_incorrect[:self.ProbaDensityKernel.n_features_in_]
 
-        proba = np.exp(self.ProbaDensityKernel.score_samples([sample_correct]))/\
-            (np.exp(self.ProbaDensityKernel.score_samples([sample_correct])) + np.exp(self.ProbaDensityKernel.score_samples([sample_incorrect])))
-        
-        return proba
+        log_p1 = self.ProbaDensityKernel.score_samples([sample_correct])
+        log_p0 = self.ProbaDensityKernel.score_samples([sample_incorrect])
+        return float(np.exp(log_p1 - np.logaddexp(log_p1, log_p0))[0])
         
     def calculate_query_correctness_probability(self, query_df: pd.DataFrame, kde_features_order: List[str] = DEFAULT_KDE_FEATURES) -> pd.DataFrame:
         """
-            This function calculates the correctness probability for the query & chunk dataframe
+            This function calculates the correctness probability for the query & chunk dataframe.
+            ``self.epsilon`` (TASK-004) is forwarded to the VR feature path.
         """
         sample = {}
-        features = calculate_relevant_features(query_df, kde_features_order)
+        features = calculate_relevant_features(query_df, kde_features_order, epsilon=self.epsilon)
         input_samples = [features[feature] for feature in kde_features_order]    # This ensures order
 
         p_correct = self.get_correctness_probability(input_samples)
@@ -108,7 +116,7 @@ class AmbiguityScorer():
         sample["p_correct"] = p_correct
         sample.update(features)
 
-        return pd.DataFrame(sample)
+        return pd.DataFrame([sample])
         
     def run_scoring(self, query_top_hits_df: pd.DataFrame) -> Tuple[float, pd.DataFrame, pd.DataFrame]:
         """ This function calculates the query correctness probability

@@ -1,8 +1,20 @@
 from setuptools import setup, find_packages
+import os
+
+def _read_install_requires():
+    req_path = os.path.join(os.path.dirname(__file__), "blowfish", "requirements.txt")
+    with open(req_path, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
+
+
+def _read_explain_extras():
+    path = os.path.join(os.path.dirname(__file__), "blowfish", "requirements-explain.txt")
+    with open(path, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
 
 setup(
     name='blowfish',
-    version='0.1.0',
+    version='0.2.0',
     author='Alex De Castro, Thomas-Roland Barillot, Javier Makmuri',
     author_email='Alex.castro@blackrock.com, thomasroland.barillot@blackrock.com, javier.makmuri@blackrock.com',
     description='A Python project focused on vector search, explainability, polysemy, and disambiguation in AI.',
@@ -10,9 +22,8 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/blackrock/blowfish',
     packages=find_packages(),
-    install_requires=[
-        # List your project's dependencies here.
-    ],
+    install_requires=_read_install_requires(),
+    extras_require={"explain": _read_explain_extras()},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
