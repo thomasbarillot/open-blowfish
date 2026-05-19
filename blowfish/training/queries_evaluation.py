@@ -15,6 +15,7 @@ limitations under the License.
 """
 
 from typing import List, ClassVar, Any, Tuple
+import logging
 import numpy as np
 import pandas as pd
 from pydantic import BaseModel, Field
@@ -23,6 +24,9 @@ from tqdm import tqdm
 import Levenshtein
 import traceback
 from blowfish.utils.vdb_factory import VDBHooks
+from blowfish.utils.constants import MIN_TOP_K_FOR_TOPOLOGY_WARNING, PAPER_TOP_K_RESULTS
+
+logger = logging.getLogger(__name__)
 
 class BulkQueriesEvaluator(BaseModel):
     
@@ -31,6 +35,8 @@ class BulkQueriesEvaluator(BaseModel):
     top_k_results: int = Field()
     vdb_path: str = Field(default="./faiss.index")
     vdb_type: str = Field()
+    #: Must match how the FAISS index was built (``"l2"`` or ``"cosine"``).
+    vdb_metric: str = Field(default="l2")
     
     vdb_index: Any = None
     vdb_mapping: Any = None
@@ -41,6 +47,14 @@ class BulkQueriesEvaluator(BaseModel):
     
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        if self.top_k_results < MIN_TOP_K_FOR_TOPOLOGY_WARNING:
+            logger.warning(
+                "top_k_results=%s is below %s; H1 / persistent homology features may be unstable. "
+                "Paper (arXiv:2406.07990) uses k=%s.",
+                self.top_k_results,
+                MIN_TOP_K_FOR_TOPOLOGY_WARNING,
+                PAPER_TOP_K_RESULTS,
+            )
         index, idx_mapping = getattr(VDBHooks, self.vdb_type)(**kwargs).load_index()
         self.vdb_index = index
         self.vdb_mapping = idx_mapping
@@ -77,6 +91,12 @@ class BulkQueriesEvaluator(BaseModel):
             expected_cols = {'docname', 'Text', 'chunk_embedding', 'hash_key','X', 'Y', 'label', 'silhouette_score'}
             assert input_columns.issuperset(expected_cols)
             
+            if topics_df["hash_key"].duplicated().any():
+                dup_examples = topics_df.loc[topics_df["hash_key"].duplicated(keep=False), "hash_key"].unique()[:10]
+                raise ValueError(
+                    "topics_df.hash_key must be unique for retrieval joins. "
+                    f"Example duplicate keys: {dup_examples.tolist()}"
+                )
             topics_df = topics_df.set_index("hash_key")
             
             QA_output = []
@@ -84,10 +104,22 @@ class BulkQueriesEvaluator(BaseModel):
             for _, row in tqdm(queries_df.iterrows()):
                 query_results = defaultdict(list)
 
-                Qembed = np.array(row.query_embedding)[np.newaxis,:]
-                D, I = self.vdb_index.search(Qembed, self.top_k_results)  # search
-
-                for score, fidx in zip(D[0],I[0]):
+                Qembed = np.asarray(row.query_embedding, dtype=np.float32)[np.newaxis, :]
+                if self.vdb_metric == "cosine":
+                    nrm = np.linalg.norm(Qembed, axis=1, keepdims=True)
+                    nrm = np.maximum(nrm, 1e-12)
+                    Qembed = Qembed / nrm
+                D, I = self.vdb_index.search(Qembed, self.top_k_results)
+                raw = np.asarray(D[0], dtype=np.float64)
+                if self.vdb_metric == "cosine":
+                    # FAISS IndexFlatIP returns inner products in descending order
+                    # (largest = most similar). Convert to cosine *distance* so the
+                    # downstream `scale_*` features (which assume small = closer)
+                    # behave consistently with the L2 path.
+                    dist_or_ip = 1.0 - raw
+                else:
+                    dist_or_ip = raw
+                for score, fidx in zip(dist_or_ip, I[0]):
                     hash_key = self.vdb_mapping[fidx]
                     retrieved_chunk = topics_df.loc[hash_key]
                     query_results["chunk_topn_answer"].append(retrieved_chunk["Text"])

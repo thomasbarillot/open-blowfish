@@ -17,12 +17,13 @@ limitations under the License.
 DEFAULT_KDE_FEATURES = ["scale_mean",
                         "scale_min",
                         "iq25-75_scale",
-                        "max_homology_birth",
-                        "mean_homology_birth",
-                        "std_homology_birth",
-                        "mean_homology1st_birth",
-                        "mean_homology1st_lifetime",
+                        "w1_h0",
+                        "lt_max_h1",
                         "top_k_doc_spread",
                         "top_k_topic_spread",
                         "silhouette_score_mean",
                         "silhouette_score_std"]
+
+# Paper (arXiv:2406.07990, §3.6) uses k=50; H₁ features need enough neighbors to be stable.
+PAPER_TOP_K_RESULTS = 50
+MIN_TOP_K_FOR_TOPOLOGY_WARNING = 15
