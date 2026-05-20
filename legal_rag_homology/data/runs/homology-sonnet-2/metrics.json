@@ -1,0 +1,241 @@
+{
+  "run_name": "homology-sonnet-2",
+  "n_questions": 81,
+  "verdict": {
+    "accurate": 12,
+    "incomplete": 31,
+    "hallucinated": 38
+  },
+  "verdict_rates": {
+    "accurate": 0.14814814814814814,
+    "incomplete": 0.38271604938271603,
+    "hallucinated": 0.4691358024691358
+  },
+  "correctness": {
+    "correct": 40,
+    "incorrect": 24,
+    "partially_correct": 17
+  },
+  "groundedness": {
+    "grounded": 35,
+    "partially_grounded": 27,
+    "ungrounded": 19
+  },
+  "citation_metrics": {
+    "macro_precision": 0.4646090534979424,
+    "macro_recall": 0.31939038327927216,
+    "macro_f1": 0.3509473913355349,
+    "mean_secondary_hits": 0.12345679012345678,
+    "total_secondary_hits": 10
+  },
+  "retrieval_chunk_metrics": {
+    "macro_precision": 0.085496754707281,
+    "macro_recall": 0.22819748470483764,
+    "macro_f1": 0.10264506229222768,
+    "macro_precision_at_neighbor_1": 0.14435715356767984,
+    "macro_recall_at_neighbor_1": 0.3524595624963272,
+    "macro_f1_at_neighbor_1": 0.1717108054119402,
+    "mean_n_retrieved": 11.45,
+    "mean_n_gold": 5.683333333333334,
+    "mean_tp": 0.8666666666666667,
+    "mean_tp_neighbor": 0.6,
+    "n_questions_with_gold": 60
+  },
+  "by_category": [
+    {
+      "category": "Bar Exam",
+      "n": 7,
+      "accurate": 0.2857142857142857,
+      "incomplete": 0.5714285714285714,
+      "hallucinated": 0.14285714285714285,
+      "precision": 0.7380952380952381,
+      "recall": 0.3820964749536178,
+      "f1": 0.4749433106575963,
+      "retrieval_precision": 0.09337606837606838,
+      "retrieval_recall": 0.23062770562770563,
+      "retrieval_f1": 0.11561365286855484
+    },
+    {
+      "category": "Changes in Law",
+      "n": 3,
+      "accurate": 0.0,
+      "incomplete": 0.3333333333333333,
+      "hallucinated": 0.6666666666666666,
+      "precision": 0.16666666666666666,
+      "recall": 0.16666666666666666,
+      "f1": 0.16666666666666666,
+      "retrieval_precision": NaN,
+      "retrieval_recall": NaN,
+      "retrieval_f1": NaN
+    },
+    {
+      "category": "Circuit Splits",
+      "n": 8,
+      "accurate": 0.125,
+      "incomplete": 0.75,
+      "hallucinated": 0.125,
+      "precision": 0.4583333333333333,
+      "recall": 0.1834745115995116,
+      "f1": 0.24717261904761906,
+      "retrieval_precision": 0.03520408163265306,
+      "retrieval_recall": 0.15476190476190474,
+      "retrieval_f1": 0.05408902691511387
+    },
+    {
+      "category": "Doctrine Test",
+      "n": 5,
+      "accurate": 0.2,
+      "incomplete": 0.4,
+      "hallucinated": 0.4,
+      "precision": 0.3333333333333333,
+      "recall": 0.3015151515151515,
+      "f1": 0.3092436974789916,
+      "retrieval_precision": 0.175,
+      "retrieval_recall": 0.40625942684766214,
+      "retrieval_f1": 0.2139805194805195
+    },
+    {
+      "category": "False Holding Statements",
+      "n": 5,
+      "accurate": 0.4,
+      "incomplete": 0.2,
+      "hallucinated": 0.4,
+      "precision": 0.5,
+      "recall": 0.18214285714285713,
+      "f1": 0.26222222222222225,
+      "retrieval_precision": 0.17738095238095236,
+      "retrieval_recall": 0.23916666666666667,
+      "retrieval_f1": 0.1818263305322129
+    },
+    {
+      "category": "False Judicial Contribution",
+      "n": 1,
+      "accurate": 1.0,
+      "incomplete": 0.0,
+      "hallucinated": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_precision": NaN,
+      "retrieval_recall": NaN,
+      "retrieval_f1": NaN
+    },
+    {
+      "category": "Local Rules",
+      "n": 4,
+      "accurate": 0.0,
+      "incomplete": 0.0,
+      "hallucinated": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_precision": NaN,
+      "retrieval_recall": NaN,
+      "retrieval_f1": NaN
+    },
+    {
+      "category": "Metadata: Author",
+      "n": 3,
+      "accurate": 0.3333333333333333,
+      "incomplete": 0.0,
+      "hallucinated": 0.6666666666666666,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "retrieval_precision": 0.03571428571428571,
+      "retrieval_recall": 0.5,
+      "retrieval_f1": 0.06666666666666667
+    },
+    {
+      "category": "Metadata: Citation",
+      "n": 3,
+      "accurate": 0.3333333333333333,
+      "incomplete": 0.0,
+      "hallucinated": 0.6666666666666666,
+      "precision": 0.3333333333333333,
+      "recall": 0.1111111111111111,
+      "f1": 0.16666666666666666,
+      "retrieval_precision": 0.0,
+      "retrieval_recall": 0.0,
+      "retrieval_f1": 0.0
+    },
+    {
+      "category": "Metadata: Year",
+      "n": 4,
+      "accurate": 0.0,
+      "incomplete": 0.0,
+      "hallucinated": 1.0,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9166666666666666,
+      "retrieval_precision": NaN,
+      "retrieval_recall": NaN,
+      "retrieval_f1": NaN
+    },
+    {
+      "category": "Question with Irrelevant Context",
+      "n": 4,
+      "accurate": 0.0,
+      "incomplete": 0.0,
+      "hallucinated": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "retrieval_precision": 0.0,
+      "retrieval_recall": 0.0,
+      "retrieval_f1": 0.0
+    },
+    {
+      "category": "Rule QA",
+      "n": 10,
+      "accurate": 0.1,
+      "incomplete": 0.7,
+      "hallucinated": 0.2,
+      "precision": 0.4966666666666667,
+      "recall": 0.2529304029304029,
+      "f1": 0.29737741790373373,
+      "retrieval_precision": 0.1330246913580247,
+      "retrieval_recall": 0.23364197530864197,
+      "retrieval_f1": 0.1397553971083383
+    },
+    {
+      "category": "SCALR",
+      "n": 13,
+      "accurate": 0.07692307692307693,
+      "incomplete": 0.6923076923076923,
+      "hallucinated": 0.23076923076923078,
+      "precision": 0.39743589743589747,
+      "recall": 0.3420940170940171,
+      "f1": 0.3302808302808303,
+      "retrieval_precision": 0.09761904761904762,
+      "retrieval_recall": 0.3680555555555555,
+      "retrieval_f1": 0.13211527035056447
+    },
+    {
+      "category": "Treatment (Doctrinal Agreement)",
+      "n": 6,
+      "accurate": 0.0,
+      "incomplete": 0.0,
+      "hallucinated": 1.0,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.8888888888888888,
+      "retrieval_precision": 0.0,
+      "retrieval_recall": 0.0,
+      "retrieval_f1": 0.0
+    },
+    {
+      "category": "Whimsical Holding Statements",
+      "n": 5,
+      "accurate": 0.2,
+      "incomplete": 0.2,
+      "hallucinated": 0.6,
+      "precision": 0.2,
+      "recall": 0.2,
+      "f1": 0.2,
+      "retrieval_precision": 0.0632748538011696,
+      "retrieval_recall": 0.24285714285714283,
+      "retrieval_f1": 0.07901595420777006
+    }
+  ]
+}
