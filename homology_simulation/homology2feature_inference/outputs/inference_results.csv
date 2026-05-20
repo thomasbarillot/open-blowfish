@@ -1,0 +1,933 @@
+tag_name,doc_name,pnum,query_granularity,corpus_granularity,n_tagged,n_shared_best,noise_best,l2_distance,n_grid_points
+CI Definition Includes Discussion Existence,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,chunk,52,7,0.1,3.3104997647428367,16
+CI Definition Includes Discussion Existence,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,paragraph,11,10,0.2,0.8118884202283859,3
+CI Definition Includes Discussion Existence,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,sentence,11,2,0.2,0.8089613924808998,3
+CI Definition Includes Discussion Existence,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,chunk,52,8,0.2,2.260286553675297,10
+CI Definition Includes Discussion Existence,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,paragraph,11,10,0.2,1.081620919380869,4
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,6,paragraph,chunk,34,7,0.1,2.2339493835035187,14
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,6,sentence,chunk,34,7,0.1,2.6860142638334734,15
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,6,sentence,paragraph,9,4,0.05,3.3686910070959613,4
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,6,sentence,sentence,9,4,0.05,2.8478237417313483,4
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,6,paragraph,chunk,34,7,0.1,2.448241439694765,13
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,6,paragraph,sentence,9,10,0.0,3.8887755296814257,25
+CI Definition Includes Discussion Existence,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,6,sentence,chunk,34,7,0.1,2.59689833667103,15
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,24,10,0.2,0.959101301138309,5
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,5,1,0.2,1.840683514401076,5
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,5,1,0.2,1.938642657152997,6
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,24,7,0.1,3.6174573852839607,16
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,5,2,0.2,2.0397104629166667,15
+CI Definition Includes Third Party Info,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,5,6,0.2,1.6218908743178981,12
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,40,10,0.2,2.801601435135333,15
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,5,2,0.2,4.633472288577871,12
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,5,3,0.2,4.0668835835890365,9
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,40,8,0.2,2.9010748445005787,9
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,5,2,0.2,2.413707219000378,9
+CI Definition Includes Third Party Info,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,5,1,0.1,1.3567650791414663,9
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,37,10,0.2,1.3449555570002965,5
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,5,2,0.2,0.47019470327623103,3
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,5,2,0.2,0.49728649545985076,3
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,37,7,0.1,3.573219080196625,16
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,5,2,0.2,2.006297296310336,12
+CI Definition Includes Third Party Info,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,5,6,0.2,1.5970339184196778,11
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,chunk,38,10,0.2,2.513214305365605,12
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,paragraph,5,2,0.2,1.0811626154406084,5
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,sentence,5,3,0.2,3.3938037751011683,8
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,chunk,38,3,0.1,3.3531019159226165,14
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,paragraph,5,3,0.1,2.177682948951701,12
+CI Definition Includes Third Party Info,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,sentence,5,1,0.1,0.9788977774180889,7
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,23,10,0.2,2.0865234753006283,14
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,4,2,0.2,4.34508258318508,12
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,4,1,0.2,4.3196232112786985,10
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,23,7,0.1,2.9944364334942297,15
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,4,2,0.2,1.4217864326293308,10
+CI Definition Industry Specific Terms,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,4,2,0.2,1.284684048758877,8
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,paragraph,chunk,26,10,0.2,3.245119935310968,10
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,paragraph,paragraph,4,2,0.2,1.3202280250186256,10
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,paragraph,sentence,4,2,0.2,1.0223719824447959,8
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,sentence,chunk,26,10,0.2,2.7077458872141733,9
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,sentence,paragraph,4,2,0.2,1.2434708363338798,8
+CI Definition Industry Specific Terms,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,5,sentence,sentence,4,2,0.2,0.9257544626678904,6
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,chunk,15,10,0.2,2.4132682901977955,12
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,paragraph,3,2,0.2,0.8307778196323383,5
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,sentence,3,1,0.2,3.7312321153724577,9
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,chunk,15,7,0.1,2.2603598614246265,9
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,paragraph,3,10,0.2,2.114382691604804,14
+CI Definition Industry Specific Terms,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,sentence,3,2,0.2,1.211097130802827,6
+CI Definition Marking Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,59,10,0.2,0.9563535621160487,4
+CI Definition Marking Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,8,1,0.2,1.463522433035334,5
+CI Definition Marking Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,8,1,0.2,1.085511894074685,5
+CI Definition Marking Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,59,8,0.2,1.797309435147979,7
+CI Definition Marking Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,8,10,0.2,0.8389970187524785,4
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,75,10,0.2,2.392027186316489,14
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,8,2,0.2,4.7580148329015985,11
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,8,1,0.2,4.30842777409802,9
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,75,3,0.1,3.421565544919795,13
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,8,2,0.2,1.3506083590247526,6
+CI Definition Marking Required,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,8,2,0.2,1.2355600573645797,6
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,72,10,0.2,1.395310227815234,5
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,8,1,0.2,1.661169399177425,5
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,8,2,0.2,1.8587434914273633,5
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,72,3,0.1,3.1504143617648124,15
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,8,10,0.2,1.8177291070529424,10
+CI Definition Marking Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,8,10,0.2,0.8881507968159206,4
+CI Definition Marking Required,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,chunk,64,10,0.2,1.9278815765660386,11
+CI Definition Marking Required,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,paragraph,7,2,0.2,0.7544080043271604,4
+CI Definition Marking Required,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,sentence,7,3,0.2,3.483052571092878,8
+CI Definition Marking Required,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,chunk,64,3,0.1,3.817294023669318,12
+CI Definition Marking Required,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,sentence,7,1,0.1,0.7694227677130393,8
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,76,10,0.2,0.9563535621160487,4
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,29,1,0.2,1.463522433035334,5
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,48,1,0.2,1.085511894074685,5
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,76,8,0.2,2.633210391974455,9
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,29,10,0.2,1.744254750404907,10
+CI Definition Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,48,10,0.2,0.40533602328271545,3
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,92,10,0.2,2.392027186316489,14
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,29,2,0.2,4.7580148329015985,11
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,48,1,0.2,4.30842777409802,9
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,92,10,0.2,1.2041045175410032,8
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,29,2,0.2,2.083154584401411,6
+CI Definition Scope,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,48,1,0.2,1.6941983556179065,6
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,89,10,0.2,1.395310227815234,5
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,29,1,0.2,1.661169399177425,5
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,48,2,0.2,1.8587434914273633,5
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,89,10,0.2,1.7110627389964441,6
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,29,10,0.2,1.3189238959252099,5
+CI Definition Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,48,1,0.2,1.9673788317649492,6
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,chunk,85,10,0.2,1.9278815765660386,11
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,paragraph,28,2,0.2,0.7544080043271604,4
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,paragraph,sentence,47,3,0.2,3.483052571092878,8
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,chunk,85,7,0.1,1.5213045546160093,13
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,paragraph,28,2,0.2,1.125179298619336,5
+CI Definition Scope,SRT NDA Master Template (OTPP Markup v2).docx,10,sentence,sentence,47,1,0.2,4.237585306830213,9
+CI Definition Software Specific,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,10,7,0.1,0.8730822928572168,14
+CI Definition Software Specific,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,1,1,0.2,0.8779798624810633,7
+CI Definition Software Specific,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,1,2,0.2,1.3934158057309805,7
+CI Definition Software Specific,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,10,3,0.1,0.9703079122940027,10
+CI Definition Software Specific,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,1,8,0.2,1.3893564914080503,8
+CI Exclusion Independent Development,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,47,10,0.2,0.9111896221679927,4
+CI Exclusion Independent Development,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,7,1,0.2,1.3569871759103493,5
+CI Exclusion Independent Development,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,7,1,0.2,1.0575665612772251,5
+CI Exclusion Independent Development,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,47,3,0.1,3.296052425177024,14
+CI Exclusion Independent Development,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,7,1,0.1,0.9964997449826718,9
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,paragraph,chunk,54,7,0.1,2.6054161769736064,13
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,paragraph,paragraph,6,2,0.2,2.6618052779224293,8
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,paragraph,sentence,6,8,0.2,1.2937561838961729,9
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,sentence,chunk,54,7,0.1,2.9700373996540117,13
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,sentence,paragraph,6,2,0.2,1.6074997320077873,8
+CI Exclusion Independent Development,Project Greenlight - KHLP3 - OTPP NDA.docx,24,sentence,sentence,6,10,0.2,1.274265923733553,10
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,60,10,0.2,1.3829296206615342,5
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,7,1,0.2,1.536540999682564,5
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,7,2,0.2,1.8360327502364078,5
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,60,3,0.1,2.975874694127797,13
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,7,1,0.1,1.1548564940586297,9
+CI Exclusion Independent Development,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,7,1,0.1,1.2116053808017442,8
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,chunk,66,2,0.2,3.2917500041559955,15
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,paragraph,7,1,0.1,2.5976723143726947,13
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,sentence,7,2,0.2,1.9902026492122666,8
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,chunk,66,7,0.1,1.9051672962463002,9
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,paragraph,7,2,0.2,0.8214475552261381,4
+CI Exclusion Independent Development,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,sentence,7,2,0.2,0.6388133622529485,3
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,45,10,0.2,0.9111896221679927,4
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,7,1,0.2,1.3569871759103493,5
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,7,1,0.2,1.0575665612772251,5
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,45,3,0.1,2.248935121227531,9
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,7,2,0.1,2.2561000460250096,10
+CI Exclusion Prior Knowledge,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,7,6,0.2,1.5176025913830498,10
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,paragraph,chunk,59,10,0.2,2.280348811515264,8
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,paragraph,paragraph,7,2,0.2,2.054500672679634,9
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,paragraph,sentence,7,10,0.2,1.3900817399109056,11
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,sentence,chunk,59,10,0.2,2.5891875106014535,12
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,sentence,paragraph,7,2,0.2,2.1112730397425152,10
+CI Exclusion Prior Knowledge,Project Greenlight - KHLP3 - OTPP NDA.docx,22,sentence,sentence,7,2,0.2,1.2476968316219286,9
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,58,10,0.2,1.3829296206615342,5
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,7,1,0.2,1.536540999682564,5
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,7,2,0.2,1.8360327502364078,5
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,58,8,0.2,1.6569931636913602,7
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,7,2,0.1,2.080699672098011,11
+CI Exclusion Prior Knowledge,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,7,8,0.2,1.1701974163035396,6
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,chunk,64,2,0.2,3.2917500041559955,15
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,paragraph,7,1,0.1,2.5976723143726947,13
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,sentence,7,2,0.2,1.9902026492122666,8
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,chunk,64,3,0.1,2.7920954717321513,11
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,paragraph,7,1,0.1,2.1092756906808643,9
+CI Exclusion Prior Knowledge,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,sentence,7,8,0.2,1.0887257902077025,7
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,43,10,0.2,0.9111896221679927,4
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,8,1,0.2,1.3569871759103493,5
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,8,1,0.2,1.0575665612772251,5
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,43,10,0.2,2.096791969866486,12
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,8,2,0.2,0.8483137418742512,13
+CI Exclusion Public Domain,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,8,10,0.2,0.4728625240203442,5
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,paragraph,chunk,58,7,0.1,3.370549746196112,13
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,paragraph,paragraph,8,10,0.2,0.7453908829244603,4
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,paragraph,sentence,8,10,0.2,0.6556689652417277,4
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,sentence,chunk,58,7,0.1,2.737550691284208,12
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,sentence,paragraph,8,10,0.2,1.3003371339460954,5
+CI Exclusion Public Domain,Project Greenlight - KHLP3 - OTPP NDA.docx,21,sentence,sentence,8,10,0.2,0.6806338134287231,4
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,56,10,0.2,1.3829296206615342,5
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,8,1,0.2,1.536540999682564,5
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,8,2,0.2,1.8360327502364078,5
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,56,8,0.2,1.7195914540988948,7
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,8,1,0.2,1.9292464092880417,5
+CI Exclusion Public Domain,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,8,1,0.2,1.5062244571304073,4
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,chunk,62,2,0.2,3.2917500041559955,15
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,paragraph,8,1,0.1,2.5976723143726947,13
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,sentence,8,2,0.2,1.9902026492122666,8
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,chunk,62,3,0.1,2.6593776646148535,8
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,paragraph,8,2,0.2,2.2675876851801084,8
+CI Exclusion Public Domain,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,sentence,8,2,0.2,0.9415882419228575,6
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,chunk,47,10,0.2,0.9111896221679927,4
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,paragraph,7,1,0.2,1.3569871759103493,5
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,paragraph,sentence,7,1,0.2,1.0575665612772251,5
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,chunk,47,2,0.1,2.9918142609854392,13
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,paragraph,7,1,0.2,1.656287041912955,6
+CI Exclusion Third Party Receipt,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,30,sentence,sentence,7,1,0.1,0.9954208600725104,5
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,paragraph,chunk,60,7,0.1,2.850713176144805,15
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,paragraph,paragraph,7,2,0.2,1.0490364434097181,5
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,paragraph,sentence,7,2,0.2,0.7856400508033576,5
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,sentence,chunk,60,7,0.1,2.522960510667019,16
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,sentence,paragraph,7,2,0.2,1.1137932646720177,5
+CI Exclusion Third Party Receipt,Project Greenlight - KHLP3 - OTPP NDA.docx,23,sentence,sentence,7,2,0.2,1.017850652800906,5
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,chunk,60,10,0.2,1.3829296206615342,5
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,paragraph,7,1,0.2,1.536540999682564,5
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,paragraph,sentence,7,2,0.2,1.8360327502364078,5
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,chunk,60,2,0.1,2.2802234887451065,12
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,paragraph,7,1,0.2,1.7286382033831242,6
+CI Exclusion Third Party Receipt,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,6,sentence,sentence,7,1,0.1,1.0434587642571784,5
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,chunk,66,2,0.2,3.2917500041559955,15
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,paragraph,7,1,0.1,2.5976723143726947,13
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,paragraph,sentence,7,2,0.2,1.9902026492122666,8
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,chunk,66,3,0.1,2.408020120018617,13
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,paragraph,7,1,0.1,1.800042965807804,12
+CI Exclusion Third Party Receipt,SRT NDA Master Template (OTPP Markup v2).docx,19,sentence,sentence,7,10,0.2,1.2685321673470609,11
+Contact Restrictions Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,35,paragraph,chunk,58,1,0.1,1.0531357976035802,6
+Contact Restrictions Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,35,paragraph,sentence,11,6,0.1,1.278664540309571,3
+Contact Restrictions Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,35,sentence,chunk,58,7,0.1,1.66381865928479,14
+Contact Restrictions Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,35,sentence,paragraph,10,9,0.2,1.228988665129702,5
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,paragraph,chunk,50,4,0.05,0.889794905025717,3
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,chunk,50,7,0.1,3.3306940500141664,14
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,paragraph,9,10,0.2,2.044544078638606,9
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,sentence,10,10,0.1,2.106346640845304,13
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,chunk,50,7,0.1,3.3798148834297694,13
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,paragraph,9,10,0.2,1.7751934117098576,9
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,sentence,10,7,0.1,2.3429382007981356,13
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,paragraph,chunk,50,10,0.2,2.743235808646365,10
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,sentence,chunk,50,3,0.1,1.7485157286514779,10
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,sentence,paragraph,9,2,0.2,2.095393176461261,8
+Contact Restrictions Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,sentence,sentence,10,1,0.1,0.9830353889679778,8
+Counterparts,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,43,paragraph,chunk,14,1,0.1,1.6200315853601257,7
+Counterparts,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,43,paragraph,paragraph,5,3,0.2,1.2496555367252804,4
+Counterparts,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,43,sentence,chunk,14,10,0.2,1.3482772197738886,6
+Counterparts,Project Greenlight - KHLP3 - OTPP NDA.docx,62,paragraph,chunk,10,10,0.2,2.215897853271098,13
+Counterparts,Project Greenlight - KHLP3 - OTPP NDA.docx,62,paragraph,paragraph,5,1,0.1,4.09845398379145,19
+Counterparts,Project Greenlight - KHLP3 - OTPP NDA.docx,62,sentence,chunk,10,10,0.2,0.8515068817548741,4
+Counterparts,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,20,paragraph,chunk,14,1,0.1,1.6306587278965823,7
+Counterparts,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,20,paragraph,paragraph,5,1,0.2,1.4258723334042673,4
+Counterparts,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,20,sentence,chunk,14,10,0.2,1.4314208306528404,6
+Counterparts,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,14,1,0.1,3.0636343759156355,12
+Counterparts,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,5,2,0.2,3.9884461051190914,9
+Counterparts,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,5,2,0.2,0.9218627152512221,7
+Counterparts,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,14,10,0.2,1.0126851794502139,4
+Counterparts,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,5,3,0.2,4.906497174783313,6
+Disclosing Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,chunk,44,8,0.2,1.581622943095264,7
+Disclosing Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,chunk,44,10,0.2,0.787725798381722,4
+Disclosing Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,paragraph,14,8,0.2,0.5945675160832918,8
+Disclosing Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,sentence,14,8,0.2,0.6695745136181138,8
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,1,paragraph,chunk,44,3,0.1,1.9215385953030681,11
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,1,sentence,chunk,44,3,0.1,1.9407527470074015,12
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,1,paragraph,chunk,44,3,0.1,2.0034787245706904,11
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,1,sentence,chunk,44,3,0.1,2.3333779995595747,11
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,2,paragraph,chunk,44,3,0.1,2.0102869634560063,11
+Disclosing Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,2,sentence,chunk,44,3,0.1,2.3858802021334657,11
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,chunk,21,10,0.2,1.3628199841371227,7
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,paragraph,5,2,0.2,1.0550413648913364,4
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,sentence,5,2,0.2,0.49944577349358177,3
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,chunk,21,10,0.2,1.202386757890829,9
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,paragraph,5,1,0.2,1.2707431820370685,5
+Dispute Resolution,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,sentence,5,1,0.2,1.3742352132899374,5
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,chunk,17,2,0.2,1.9107101385501868,8
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,paragraph,5,2,0.2,1.4949659936932096,7
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,sentence,5,1,0.2,1.3227047145004693,3
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,chunk,17,10,0.2,1.8442430631645588,9
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,paragraph,5,2,0.2,1.5121610386914246,8
+Dispute Resolution,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,sentence,5,1,0.2,0.71963214108817,3
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,chunk,20,8,0.2,2.5973453096545382,12
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,paragraph,5,1,0.1,1.8350249361400692,14
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,sentence,5,1,0.1,1.2204393390258128,11
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,chunk,20,1,0.1,2.4653533221175787,9
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,paragraph,5,2,0.2,1.6230134498693747,5
+Dispute Resolution,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,sentence,5,1,0.1,5.419234780414863,9
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,21,1,0.1,3.892504934214069,13
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,5,2,0.2,3.583283279156956,9
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,5,2,0.2,1.2779275381787472,8
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,21,10,0.2,2.1606941296682205,9
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,paragraph,5,10,0.2,1.3442440744990964,5
+Dispute Resolution,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,5,2,0.2,0.7514811770841066,4
+Document Subtype,SRT NDA Master Template (OTPP Markup v2).docx,4,paragraph,chunk,40,3,0.1,1.796932903695831,7
+Document Subtype,SRT NDA Master Template (OTPP Markup v2).docx,4,sentence,chunk,40,3,0.1,2.1015098340847396,8
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,chunk,44,7,0.1,1.9938119056762578,13
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,paragraph,16,2,0.2,1.102717787086759,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,sentence,16,10,0.2,0.8106886696770185,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,sentence,chunk,44,7,0.1,1.9786172613179374,13
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,chunk,39,7,0.1,2.0238982206621223,13
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,paragraph,15,2,0.2,1.0940503457195654,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,sentence,15,2,0.2,1.105236603881948,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,sentence,chunk,39,3,0.1,2.2548873555381093,13
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,chunk,39,7,0.1,1.9289939036299875,13
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,paragraph,15,2,0.2,1.0966081224622883,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,sentence,15,2,0.2,1.1073184198316932,3
+Document Subtype,YellowstoneB2B-OTPP-03-06-2026.docx,0,sentence,chunk,39,3,0.1,2.1849511311943495,13
+Document Type,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,chunk,65,8,0.2,1.581622943095264,7
+Document Type,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,chunk,65,3,0.1,2.433840617640977,12
+Document Type,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,paragraph,14,8,0.2,1.4051782549222824,9
+Document Type,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,sentence,14,10,0.2,1.2260778462621835,9
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,chunk,66,7,0.1,1.9938119056762578,13
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,paragraph,14,2,0.2,1.102717787086759,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,sentence,14,10,0.2,0.8106886696770185,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,sentence,chunk,66,7,0.1,1.9786172613179374,13
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,chunk,66,7,0.1,2.0238982206621223,13
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,paragraph,14,2,0.2,1.0940503457195654,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,sentence,14,2,0.2,1.105236603881948,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,sentence,chunk,66,7,0.1,2.0032500538585065,13
+Document Type,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,chunk,66,7,0.1,1.9289939036299875,13
+Document Type,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,paragraph,14,2,0.2,1.0966081224622883,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,sentence,14,2,0.2,1.1073184198316932,3
+Document Type,YellowstoneB2B-OTPP-03-06-2026.docx,0,sentence,chunk,66,7,0.1,1.9263696181719028,13
+Entire Agreement,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,41,paragraph,sentence,7,1,0.2,3.831703831730695,7
+Entire Agreement,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,41,sentence,chunk,27,2,0.2,2.0366578396946444,12
+Entire Agreement,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,41,sentence,paragraph,7,2,0.2,1.6353388197426557,8
+Entire Agreement,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,41,sentence,sentence,7,1,0.2,0.7089060932929596,4
+Entire Agreement,Project Greenlight - KHLP3 - OTPP NDA.docx,62,paragraph,chunk,24,10,0.2,1.9949919087149774,12
+Entire Agreement,Project Greenlight - KHLP3 - OTPP NDA.docx,62,paragraph,paragraph,7,1,0.1,4.487691588492304,19
+Entire Agreement,Project Greenlight - KHLP3 - OTPP NDA.docx,62,sentence,chunk,24,8,0.2,2.4069676829814406,11
+Entire Agreement,Project Greenlight - KHLP3 - OTPP NDA.docx,62,sentence,paragraph,7,2,0.2,1.8379653672905834,6
+Entire Agreement,Project Greenlight - KHLP3 - OTPP NDA.docx,62,sentence,sentence,7,1,0.1,2.1107353911932587,7
+Entire Agreement,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,18,paragraph,sentence,7,2,0.2,1.2280302618114418,6
+Entire Agreement,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,18,sentence,chunk,26,2,0.2,1.884376647357037,12
+Entire Agreement,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,18,sentence,paragraph,7,2,0.2,1.0512215351094298,7
+Entire Agreement,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,18,sentence,sentence,7,6,0.1,2.6534503675858065,5
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,28,1,0.1,2.6285223684612062,11
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,7,2,0.2,4.275506350228992,9
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,7,2,0.2,1.0453676982293192,7
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,28,8,0.2,3.2192897638497917,11
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,paragraph,7,2,0.2,1.6540437245218078,7
+Entire Agreement,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,7,2,0.2,0.9967039006424112,6
+Financing Sources Included,Project Greenlight - KHLP3 - OTPP NDA.docx,11,paragraph,chunk,21,10,0.2,1.0875138351797766,5
+Financing Sources Included,Project Greenlight - KHLP3 - OTPP NDA.docx,11,paragraph,sentence,8,1,0.2,0.7070942752271853,3
+Financing Sources Included,Project Greenlight - KHLP3 - OTPP NDA.docx,11,sentence,chunk,21,2,0.1,1.3503688717402915,7
+Financing Sources Included,Project Greenlight - KHLP3 - OTPP NDA.docx,11,sentence,paragraph,8,3,0.1,1.9083647296408144,13
+Financing Sources Require Consent,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,7,2,0.2,1.2112911442697805,5
+Financing Sources Require Consent,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,19,3,0.1,2.2819825632118502,8
+Financing Sources Require Consent,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,7,10,0.2,1.7972616721452168,14
+Financing Sources Require Consent,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,sentence,7,1,0.2,1.9578844059171008,8
+Financing Sources Require Consent,Project Greenlight - KHLP3 - OTPP NDA.docx,11,paragraph,chunk,18,10,0.2,2.1091093857749743,7
+Financing Sources Require Consent,Project Greenlight - KHLP3 - OTPP NDA.docx,11,paragraph,paragraph,7,2,0.2,1.3370270959832988,10
+Financing Sources Require Consent,Project Greenlight - KHLP3 - OTPP NDA.docx,11,paragraph,sentence,7,2,0.2,1.8019392766823263,4
+Financing Sources Require Consent,Project Greenlight - KHLP3 - OTPP NDA.docx,11,sentence,chunk,18,8,0.2,2.3451487974014604,9
+Financing Sources Require Consent,Project Greenlight - KHLP3 - OTPP NDA.docx,11,sentence,paragraph,7,7,0.1,2.5871743597921535,14
+Financing Sources Require Consent,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,7,2,0.2,0.7512696892268583,5
+Financing Sources Require Consent,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,19,10,0.2,2.0036274589017715,6
+Financing Sources Require Consent,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,7,10,0.2,1.1976241460381463,7
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,chunk,18,10,0.2,2.6340922221340097,11
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,paragraph,7,2,0.2,2.200613786411055,10
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,sentence,7,2,0.2,3.8960360358971116,10
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,chunk,18,10,0.2,1.679422390948657,7
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,paragraph,7,10,0.2,1.5341277963534685,11
+Financing Sources Require Consent,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,sentence,7,2,0.2,0.6856354614034111,4
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,43,1,0.1,2.7512143328813976,11
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,14,1,0.1,3.055432718980504,7
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,14,2,0.2,0.9132860344516343,6
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,43,10,0.2,1.2534168633884968,5
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,paragraph,14,2,0.2,1.3562993753298844,4
+Governing Law,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,14,4,0.1,0.5050243030766031,4
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,13,paragraph,chunk,41,10,0.2,1.3486715905734856,7
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,13,paragraph,paragraph,14,3,0.2,1.0690199696927094,6
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,13,sentence,chunk,41,10,0.2,1.3514174801856238,7
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,11,paragraph,chunk,41,10,0.2,1.3372727385864027,7
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,11,paragraph,paragraph,14,3,0.2,1.0721340969623054,6
+Governing Law,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,11,sentence,chunk,41,10,0.2,1.354638065444159,7
+Governing Law,YellowstoneB2B-OTPP-03-06-2026.docx,12,paragraph,chunk,44,10,0.2,1.3313728363118509,7
+Governing Law,YellowstoneB2B-OTPP-03-06-2026.docx,12,paragraph,paragraph,14,3,0.2,1.0581400720432712,6
+Governing Law,YellowstoneB2B-OTPP-03-06-2026.docx,12,sentence,chunk,44,10,0.2,1.339270855780267,7
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,1,7,0.1,0.9406009607091477,13
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,paragraph,1,10,0.2,0.8037441650610022,11
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,sentence,1,3,0.1,3.0120586443076443,15
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,1,7,0.1,1.357273636470286,10
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,1,1,0.1,0.6524175429776167,10
+Information Barriers Business Units,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,1,2,0.2,2.186087624910134,17
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,4,10,0.2,1.6909400405264705,7
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,paragraph,2,2,0.2,2.1082919666218056,16
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,sentence,2,10,0.2,2.277671107021233,12
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,4,7,0.1,2.845534001009396,14
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,2,8,0.2,1.3547986626511457,11
+Information Barriers Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,2,1,0.1,1.762060606496824,10
+Initial Term Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,paragraph,chunk,33,7,0.1,1.164849067774266,8
+Initial Term Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,paragraph,paragraph,7,2,0.2,0.9070978377446365,3
+Initial Term Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,sentence,chunk,33,7,0.1,2.162953884977818,12
+Initial Term Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,sentence,paragraph,7,10,0.2,0.3225045837763942,3
+Initial Term Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,sentence,sentence,7,2,0.2,0.4268854168447409,3
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,chunk,33,3,0.1,2.29589615998497,15
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,paragraph,7,10,0.2,1.3608685950038453,6
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,sentence,7,2,0.2,0.884748444312458,5
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,chunk,33,3,0.1,2.8317555912469516,15
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,paragraph,7,10,0.2,0.600095368254245,4
+Initial Term Months,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,sentence,7,1,0.2,0.9517521842649777,4
+Initial Term Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,paragraph,chunk,32,7,0.1,1.3803054451495125,8
+Initial Term Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,sentence,chunk,32,7,0.1,2.1388297444634037,12
+Initial Term Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,sentence,paragraph,7,10,0.2,0.43854558208111044,3
+Initial Term Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,sentence,sentence,7,1,0.2,1.4035836208556998,4
+Initial Term Months,SRT NDA Master Template (OTPP Markup v2).docx,78,paragraph,chunk,19,10,0.2,1.6105537277433704,6
+Initial Term Months,SRT NDA Master Template (OTPP Markup v2).docx,78,paragraph,sentence,7,10,0.2,0.7224054665372439,4
+Initial Term Months,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,chunk,19,7,0.1,1.5614176738670047,10
+Initial Term Months,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,paragraph,7,10,0.2,0.42161240600693295,3
+Initial Term Months,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,sentence,7,10,0.2,0.3552027383652129,3
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,chunk,14,10,0.2,1.876786098055604,5
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,paragraph,6,2,0.2,1.5067476158570876,14
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,sentence,6,2,0.2,0.9372367542054618,5
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,chunk,14,1,0.1,1.1547609022514027,6
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,paragraph,6,3,0.2,1.50445731793582,8
+Injunctive Relief Available,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,sentence,6,3,0.2,0.7544636842001945,5
+Injunctive Relief Available,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,chunk,11,1,0.1,1.810578795535868,10
+Injunctive Relief Available,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,paragraph,6,1,0.2,2.5900294528241576,6
+Injunctive Relief Available,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,chunk,11,1,0.1,2.078219088178772,10
+Injunctive Relief Available,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,paragraph,6,1,0.2,2.758862793412388,6
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,chunk,14,10,0.2,1.08844573461199,3
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,paragraph,6,10,0.2,1.6952142479554988,12
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,sentence,6,2,0.2,0.7898266113916206,4
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,chunk,14,1,0.1,1.2060205437844616,6
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,paragraph,6,1,0.2,1.5610198356210683,8
+Injunctive Relief Available,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,sentence,6,1,0.2,0.8597529324285209,5
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,chunk,13,10,0.2,1.734040077318954,10
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,paragraph,6,1,0.2,2.1020052969665852,7
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,sentence,6,1,0.1,0.6089687606987582,6
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,chunk,13,8,0.2,1.164717962781644,8
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,paragraph,6,1,0.1,1.9943404513580605,8
+Injunctive Relief Available,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,sentence,6,1,0.1,0.4091681086753762,7
+Injunctive Relief Bond Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,chunk,6,10,0.2,1.6020705547583314,5
+Injunctive Relief Bond Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,paragraph,3,2,0.2,1.4773018805773133,15
+Injunctive Relief Bond Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,sentence,3,10,0.2,1.1122608388796653,6
+Injunctive Relief Bond Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,chunk,6,2,0.1,1.6031951170576424,15
+Injunctive Relief Bond Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,chunk,6,10,0.2,1.0486594953246802,3
+Injunctive Relief Bond Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,paragraph,3,10,0.2,1.958514177711779,13
+Injunctive Relief Bond Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,sentence,3,2,0.2,1.1554661968747082,5
+Injunctive Relief Bond Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,chunk,6,3,0.1,1.7088929675646198,15
+Injunctive Relief Bond Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,paragraph,3,2,0.2,2.24076706936112,17
+Injunctive Relief Cumulative With Other Remedies,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,chunk,14,10,0.2,1.876786098055604,5
+Injunctive Relief Cumulative With Other Remedies,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,paragraph,6,2,0.2,1.5067476158570876,14
+Injunctive Relief Cumulative With Other Remedies,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,sentence,6,2,0.2,0.9372367542054618,5
+Injunctive Relief Cumulative With Other Remedies,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,chunk,14,10,0.2,1.8021254109764056,8
+Injunctive Relief Cumulative With Other Remedies,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,paragraph,6,1,0.2,1.9326724741107388,7
+Injunctive Relief Cumulative With Other Remedies,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,chunk,11,1,0.1,1.810578795535868,10
+Injunctive Relief Cumulative With Other Remedies,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,paragraph,6,1,0.2,2.5900294528241576,6
+Injunctive Relief Cumulative With Other Remedies,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,chunk,11,7,0.1,1.6316781483728258,10
+Injunctive Relief Cumulative With Other Remedies,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,paragraph,6,1,0.1,1.2361294395271702,10
+Injunctive Relief Cumulative With Other Remedies,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,sentence,6,2,0.2,1.1804162019472342,5
+Injunctive Relief Cumulative With Other Remedies,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,chunk,14,10,0.2,1.08844573461199,3
+Injunctive Relief Cumulative With Other Remedies,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,paragraph,6,10,0.2,1.6952142479554988,12
+Injunctive Relief Cumulative With Other Remedies,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,sentence,6,2,0.2,0.7898266113916206,4
+Injunctive Relief Cumulative With Other Remedies,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,chunk,14,10,0.2,1.0973087671753479,7
+Injunctive Relief Cumulative With Other Remedies,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,paragraph,6,1,0.2,2.0603314792135583,7
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,chunk,13,10,0.2,1.734040077318954,10
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,paragraph,6,1,0.2,2.1020052969665852,7
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,sentence,6,1,0.1,0.6089687606987582,6
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,chunk,13,1,0.1,1.6080966607884981,9
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,paragraph,6,1,0.1,1.7506855231542804,7
+Injunctive Relief Cumulative With Other Remedies,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,sentence,6,1,0.1,0.8766670186006649,7
+Injunctive Relief Pre Agreed Irreparable Harm,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,chunk,14,10,0.2,1.876786098055604,5
+Injunctive Relief Pre Agreed Irreparable Harm,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,paragraph,6,2,0.2,1.5067476158570876,14
+Injunctive Relief Pre Agreed Irreparable Harm,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,paragraph,sentence,6,2,0.2,0.9372367542054618,5
+Injunctive Relief Pre Agreed Irreparable Harm,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,chunk,14,1,0.1,1.5052226571149274,10
+Injunctive Relief Pre Agreed Irreparable Harm,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,38,sentence,paragraph,6,2,0.2,0.9699903855965323,4
+Injunctive Relief Pre Agreed Irreparable Harm,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,chunk,11,1,0.1,1.810578795535868,10
+Injunctive Relief Pre Agreed Irreparable Harm,Project Greenlight - KHLP3 - OTPP NDA.docx,46,paragraph,paragraph,6,1,0.2,2.5900294528241576,6
+Injunctive Relief Pre Agreed Irreparable Harm,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,chunk,11,2,0.2,2.226512113841957,12
+Injunctive Relief Pre Agreed Irreparable Harm,Project Greenlight - KHLP3 - OTPP NDA.docx,46,sentence,paragraph,6,2,0.2,1.4274879511646956,7
+Injunctive Relief Pre Agreed Irreparable Harm,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,chunk,14,10,0.2,1.08844573461199,3
+Injunctive Relief Pre Agreed Irreparable Harm,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,paragraph,6,10,0.2,1.6952142479554988,12
+Injunctive Relief Pre Agreed Irreparable Harm,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,paragraph,sentence,6,2,0.2,0.7898266113916206,4
+Injunctive Relief Pre Agreed Irreparable Harm,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,chunk,14,10,0.2,1.291046045655054,10
+Injunctive Relief Pre Agreed Irreparable Harm,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,14,sentence,paragraph,6,2,0.2,1.0355313050990962,4
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,chunk,13,10,0.2,1.734040077318954,10
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,paragraph,6,1,0.2,2.1020052969665852,7
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,paragraph,sentence,6,1,0.1,0.6089687606987582,6
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,chunk,13,8,0.2,1.624616321487909,10
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,paragraph,6,1,0.1,1.8526611155461925,14
+Injunctive Relief Pre Agreed Irreparable Harm,SRT NDA Master Template (OTPP Markup v2).docx,25,sentence,sentence,6,7,0.1,1.7186806220291042,15
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,chunk,14,10,0.2,1.407314095273854,7
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,paragraph,4,2,0.2,1.7557800645599502,4
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,sentence,4,6,0.1,5.0795447489308625,7
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,chunk,14,2,0.1,1.9037662169847547,15
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,paragraph,4,2,0.2,1.4390107564029553,5
+Jury Waiver,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,sentence,4,3,0.2,1.767475002853202,7
+Jury Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,paragraph,chunk,14,10,0.2,1.737256214629334,10
+Jury Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,paragraph,paragraph,4,2,0.2,0.7480768104703042,3
+Jury Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,chunk,14,10,0.2,2.280198163134668,12
+Jury Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,paragraph,4,10,0.2,1.4052689916971242,5
+Jury Waiver,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,sentence,4,1,0.1,1.0552234575013297,7
+Liability For Representatives,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,chunk,32,10,0.2,1.9748289091052997,10
+Liability For Representatives,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,paragraph,11,2,0.2,2.1229099687431594,9
+Liability For Representatives,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,sentence,12,2,0.2,3.9835968722175403,10
+Liability For Representatives,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,chunk,32,6,0.2,2.1485712649494793,9
+Liability For Representatives,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,paragraph,11,2,0.2,1.425087894081559,11
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,9,paragraph,chunk,42,2,0.2,1.8660388689754743,7
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,9,sentence,chunk,42,8,0.2,1.4880723966372,8
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,9,paragraph,chunk,42,8,0.2,1.6800326745191574,8
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,9,sentence,chunk,42,8,0.2,1.6198840893735005,8
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026.docx,10,paragraph,chunk,41,3,0.1,1.4015784658910289,6
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026.docx,10,paragraph,paragraph,13,1,0.2,1.4062805016270818,3
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026.docx,10,paragraph,sentence,14,1,0.2,1.3817978877901766,3
+Liability For Representatives,YellowstoneB2B-OTPP-03-06-2026.docx,10,sentence,chunk,41,7,0.1,1.6733707419657338,6
+Non Solicitation Carve Outs,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,chunk,9,8,0.2,2.4215499842094204,6
+Non Solicitation Carve Outs,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,paragraph,4,2,0.2,0.9106481232372926,5
+Non Solicitation Carve Outs,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,chunk,9,10,0.2,1.2878590569908261,10
+Non Solicitation Carve Outs,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,paragraph,4,2,0.2,1.4535620695484033,5
+Non Solicitation Carve Outs,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,paragraph,4,2,0.2,2.0257899109050976,5
+Non Solicitation Carve Outs,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,sentence,4,1,0.2,0.5318394074949094,3
+Non Solicitation Carve Outs,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,paragraph,4,10,0.2,1.4226846358539178,4
+Non Solicitation Carve Outs,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,chunk,9,1,0.1,3.03996620935093,6
+Non Solicitation Carve Outs,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,paragraph,4,2,0.2,1.2721210911603436,5
+Non Solicitation Carve Outs,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,chunk,9,10,0.2,1.432893554274607,10
+Non Solicitation Carve Outs,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,paragraph,4,2,0.2,1.6916653597913538,5
+Non Solicitation Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,chunk,7,8,0.2,2.4215499842094204,6
+Non Solicitation Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,paragraph,4,2,0.2,0.9106481232372926,5
+Non Solicitation Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,chunk,7,10,0.2,1.6172673614444026,6
+Non Solicitation Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,paragraph,4,10,0.2,1.3839989547087945,7
+Non Solicitation Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,sentence,4,10,0.2,1.213080136721791,7
+Non Solicitation Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,paragraph,4,2,0.2,2.0257899109050976,5
+Non Solicitation Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,sentence,4,1,0.2,0.5318394074949094,3
+Non Solicitation Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,paragraph,4,10,0.2,1.5893773589547409,5
+Non Solicitation Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,sentence,4,1,0.2,1.465660734964644,5
+Non Solicitation Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,chunk,7,1,0.1,3.03996620935093,6
+Non Solicitation Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,paragraph,4,2,0.2,1.2721210911603436,5
+Non Solicitation Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,chunk,7,10,0.2,1.7973206684528786,6
+Non Solicitation Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,paragraph,4,10,0.2,1.6510355368174534,7
+Non Solicitation Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,sentence,4,2,0.2,0.9929201666857932,6
+Non Solicitation Duration Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,chunk,7,8,0.2,2.4215499842094204,6
+Non Solicitation Duration Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,paragraph,4,2,0.2,0.9106481232372926,5
+Non Solicitation Duration Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,chunk,7,8,0.2,1.5856564156414583,9
+Non Solicitation Duration Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,paragraph,4,2,0.2,2.2119044350064576,8
+Non Solicitation Duration Months,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,sentence,4,2,0.2,0.5034519358571762,4
+Non Solicitation Duration Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,paragraph,4,2,0.2,2.0257899109050976,5
+Non Solicitation Duration Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,sentence,4,1,0.2,0.5318394074949094,3
+Non Solicitation Duration Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,chunk,7,3,0.1,2.8938535459250367,15
+Non Solicitation Duration Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,sentence,4,10,0.2,0.6776577469180385,4
+Non Solicitation Duration Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,chunk,7,1,0.1,3.03996620935093,6
+Non Solicitation Duration Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,paragraph,4,2,0.2,1.2721210911603436,5
+Non Solicitation Duration Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,chunk,7,10,0.2,1.8981728099271393,9
+Non Solicitation Duration Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,paragraph,4,10,0.2,2.0837996013617426,8
+Non Solicitation Duration Months,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,sentence,4,2,0.2,0.64068790970577,4
+Non Solicitation Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,chunk,7,8,0.2,2.4215499842094204,6
+Non Solicitation Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,paragraph,4,2,0.2,0.9106481232372926,5
+Non Solicitation Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,chunk,7,10,0.2,2.1713572198707043,5
+Non Solicitation Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,paragraph,4,10,0.2,0.9661409648707653,4
+Non Solicitation Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,sentence,4,2,0.2,0.6582261684729256,3
+Non Solicitation Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,paragraph,4,2,0.2,2.0257899109050976,5
+Non Solicitation Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,sentence,4,1,0.2,0.5318394074949094,3
+Non Solicitation Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,paragraph,4,10,0.2,1.5893773589547409,5
+Non Solicitation Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,sentence,4,1,0.2,1.465660734964644,5
+Non Solicitation Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,chunk,7,1,0.1,3.03996620935093,6
+Non Solicitation Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,paragraph,4,2,0.2,1.2721210911603436,5
+Non Solicitation Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,chunk,7,10,0.2,2.091914168371327,5
+Non Solicitation Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,paragraph,4,10,0.2,0.8632878600442891,4
+Non Solicitation Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,sentence,4,2,0.2,1.1955166652261604,4
+Non Solicitation Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,chunk,7,8,0.2,2.4215499842094204,6
+Non Solicitation Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,paragraph,paragraph,4,2,0.2,0.9106481232372926,5
+Non Solicitation Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,chunk,7,8,0.2,1.5886186207201929,8
+Non Solicitation Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,paragraph,4,10,0.2,1.3631221901736048,6
+Non Solicitation Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,36,sentence,sentence,4,1,0.1,1.1928624286587817,8
+Non Solicitation Scope,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,paragraph,4,2,0.2,2.0257899109050976,5
+Non Solicitation Scope,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,paragraph,sentence,4,1,0.2,0.5318394074949094,3
+Non Solicitation Scope,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,chunk,7,7,0.1,2.0198324959287937,13
+Non Solicitation Scope,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,paragraph,4,10,0.2,1.3330944024013052,5
+Non Solicitation Scope,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,8,sentence,sentence,4,10,0.2,1.2396714380536624,4
+Non Solicitation Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,chunk,7,1,0.1,3.03996620935093,6
+Non Solicitation Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,paragraph,paragraph,4,2,0.2,1.2721210911603436,5
+Non Solicitation Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,chunk,7,8,0.2,2.0086227072264697,8
+Non Solicitation Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,paragraph,4,10,0.2,1.6754911188699406,6
+Non Solicitation Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,12,sentence,sentence,4,1,0.1,1.3848432554288492,8
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,chunk,69,3,0.1,3.985135716060987,15
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,paragraph,13,2,0.2,1.4427115835943518,12
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,sentence,13,2,0.2,1.3075315864960668,11
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,chunk,69,2,0.1,1.642469372224172,7
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,paragraph,13,10,0.2,0.6441982316778776,4
+Permitted Purpose Scope,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,sentence,13,2,0.2,1.3709315125608472,6
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,paragraph,chunk,65,4,0.05,0.889794905025717,3
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,chunk,65,7,0.1,2.827916606107976,12
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,sentence,12,10,0.2,0.8564073063345226,5
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,chunk,65,7,0.1,2.8660479558195164,12
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,paragraph,chunk,65,10,0.2,2.315647659902577,9
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,paragraph,sentence,12,6,0.1,0.7633620434491744,3
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,sentence,chunk,65,7,0.1,2.903470850038343,12
+Permitted Purpose Scope,YellowstoneB2B-OTPP-03-06-2026.docx,8,sentence,sentence,12,7,0.05,7.1614529895983585,19
+Perpetual Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,paragraph,chunk,14,10,0.2,2.289923430732232,10
+Perpetual Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,paragraph,paragraph,5,2,0.2,0.8238941950087724,3
+Perpetual Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,40,sentence,chunk,14,8,0.2,2.78543097174957,11
+Perpetual Categories,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,paragraph,chunk,13,7,0.1,3.844575416001819,19
+Perpetual Categories,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,paragraph,paragraph,5,10,0.2,0.8812449025070634,3
+Perpetual Categories,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,chunk,13,7,0.1,3.4956926197177314,16
+Perpetual Categories,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,paragraph,5,2,0.2,1.7586420475979438,5
+Perpetual Categories,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,sentence,5,2,0.2,1.1013785287934517,3
+Perpetual Categories,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,paragraph,chunk,13,7,0.1,1.8083420736384674,9
+Perpetual Categories,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,paragraph,paragraph,5,2,0.2,1.0373476879121208,3
+Perpetual Categories,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,17,sentence,chunk,13,8,0.2,2.5820988802055322,11
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,paragraph,chunk,14,10,0.2,2.454781794307613,10
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,paragraph,paragraph,5,1,0.1,2.5452368811218395,13
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,paragraph,sentence,5,10,0.2,0.7669507920043568,11
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,sentence,chunk,14,2,0.2,2.7410959500279004,15
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,sentence,paragraph,5,2,0.2,1.8799384891677267,9
+Perpetual Categories,SRT NDA Master Template (OTPP Markup v2).docx,35,sentence,sentence,5,2,0.2,0.7594957859211937,8
+Portfolio Company Exclusion Ethical Wall Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,3,1,0.1,3.4657029962416606,12
+Portfolio Company Exclusion Ethical Wall Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,9,10,0.2,3.0041313381545267,10
+Portfolio Company Exclusion Ethical Wall Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,3,2,0.2,1.1471205052440046,11
+Portfolio Company Exclusion Ethical Wall Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,sentence,3,10,0.2,1.1055308981040395,6
+Portfolio Company Exclusion Ethical Wall Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,3,2,0.2,2.8113345595255637,10
+Portfolio Company Exclusion Ethical Wall Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,9,10,0.2,3.1368423253377347,13
+Portfolio Company Exclusion Ethical Wall Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,3,1,0.1,1.9097236966622302,12
+Portfolio Company Exclusion Ethical Wall Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,sentence,3,10,0.2,1.521999394824982,7
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,5,3,0.1,2.287385069160246,12
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,paragraph,3,10,0.2,1.7173995102440174,7
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,sentence,3,10,0.2,0.981656342524932,6
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,5,8,0.2,1.9530845031736446,11
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,3,2,0.2,2.248773254097032,9
+Portfolio Company Exclusion Ethical Wall Required,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,3,2,0.2,1.4902350942907165,8
+Portfolio Company Exclusion Excluded Entities,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,5,1,0.1,1.9114304548111936,11
+Portfolio Company Exclusion Excluded Entities,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,18,7,0.1,3.4165114992024415,16
+Portfolio Company Exclusion Excluded Entities,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,5,2,0.2,2.51951655774589,18
+Portfolio Company Exclusion Excluded Entities,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,sentence,5,10,0.2,0.45116832456716655,3
+Portfolio Company Exclusion Excluded Entities,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,5,1,0.1,2.3386195333240756,10
+Portfolio Company Exclusion Excluded Entities,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,18,10,0.2,2.6194641160309002,11
+Portfolio Company Exclusion Excluded Entities,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,5,2,0.2,2.3612188036535007,18
+Portfolio Company Exclusion Excluded Entities,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,sentence,5,10,0.2,0.6976159196034253,3
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,14,2,0.05,1.7383994049060958,19
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,14,7,0.1,2.248770574655843,18
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,5,10,0.2,1.1598262666080181,4
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,5,2,0.2,1.4890104927138903,4
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,paragraph,chunk,14,10,0.1,1.4265884160697446,10
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,chunk,14,2,0.05,2.8010546613482172,16
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,paragraph,5,10,0.2,1.2761082359859999,5
+Portfolio Company Exclusion Excluded Entities,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,sentence,5,2,0.2,0.7527890533337971,3
+Portfolio Company Exclusion Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,5,1,0.1,1.9114304548111936,11
+Portfolio Company Exclusion Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,18,2,0.2,3.2418441642810834,11
+Portfolio Company Exclusion Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,5,1,0.1,1.807533433096818,12
+Portfolio Company Exclusion Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,5,1,0.1,2.3386195333240756,10
+Portfolio Company Exclusion Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,18,10,0.2,3.1821616565014663,13
+Portfolio Company Exclusion Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,5,1,0.1,1.8910170140681886,13
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,14,2,0.05,1.7383994049060958,19
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,14,7,0.1,2.248770574655843,18
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,5,10,0.2,1.1598262666080181,4
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,5,2,0.2,1.4890104927138903,4
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,paragraph,chunk,14,10,0.1,1.4265884160697446,10
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,chunk,14,2,0.05,2.8010546613482172,16
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,paragraph,5,10,0.2,1.2761082359859999,5
+Portfolio Company Exclusion Present,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,sentence,5,2,0.2,0.7527890533337971,3
+Portfolio Company Exclusion Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,5,1,0.1,1.9114304548111936,11
+Portfolio Company Exclusion Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,18,2,0.1,3.66145013807383,13
+Portfolio Company Exclusion Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,5,2,0.2,2.464107272715931,16
+Portfolio Company Exclusion Scope,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,sentence,5,10,0.2,0.8131428500773609,4
+Portfolio Company Exclusion Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,5,1,0.1,2.3386195333240756,10
+Portfolio Company Exclusion Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,18,8,0.2,3.14147808872427,11
+Portfolio Company Exclusion Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,5,3,0.1,2.2541306219082227,17
+Portfolio Company Exclusion Scope,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,sentence,5,10,0.2,0.49764081639361274,3
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,paragraph,chunk,14,2,0.05,1.7383994049060958,19
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,chunk,14,7,0.1,2.248770574655843,18
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,paragraph,5,10,0.2,1.1598262666080181,4
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,14,sentence,sentence,5,2,0.2,1.4890104927138903,4
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,paragraph,chunk,14,10,0.1,1.4265884160697446,10
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,chunk,14,7,0.1,2.60295938142885,13
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,paragraph,5,10,0.2,2.1763585414901057,13
+Portfolio Company Exclusion Scope,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,12,sentence,sentence,5,1,0.1,0.8296252088788845,5
+Process Control Right To Negotiate With Others,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,paragraph,chunk,8,4,0.05,1.6880593389266103,4
+Process Control Right To Negotiate With Others,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,paragraph,sentence,4,1,0.1,1.1204667315322263,15
+Process Control Right To Negotiate With Others,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,sentence,chunk,8,3,0.1,2.12451924647286,13
+Process Control Right To Negotiate With Others,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,sentence,paragraph,3,1,0.1,2.3812582694477347,9
+Process Control Right To Negotiate With Others,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,paragraph,sentence,4,1,0.1,1.749866291927496,9
+Process Control Right To Negotiate With Others,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,chunk,8,3,0.1,2.2954108760721996,13
+Process Control Right To Negotiate With Others,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,paragraph,3,2,0.2,2.7856287071765884,9
+Process Control Right To Negotiate With Others,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,sentence,4,6,0.2,2.055581211371408,13
+Process Control Sole Discretion Language,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,paragraph,chunk,4,4,0.05,1.640905323607412,4
+Process Control Sole Discretion Language,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,paragraph,sentence,2,1,0.1,1.5717575864098041,17
+Process Control Sole Discretion Language,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,sentence,chunk,4,1,0.1,1.4356747184848173,8
+Process Control Sole Discretion Language,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,37,sentence,sentence,2,10,0.2,0.8401887612778927,5
+Process Control Sole Discretion Language,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,paragraph,sentence,2,2,0.2,2.5025359277381027,11
+Process Control Sole Discretion Language,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,chunk,4,10,0.2,2.2390546395848046,9
+Process Control Sole Discretion Language,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,paragraph,2,3,0.1,2.941916320781175,16
+Process Control Sole Discretion Language,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,13,sentence,sentence,2,10,0.2,1.5037477112109183,5
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,chunk,11,2,0.2,4.814203538416718,19
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,paragraph,6,3,0.2,1.080425564633896,3
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,sentence,6,2,0.2,0.9540968512634387,3
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,chunk,11,10,0.2,3.4322382784505514,13
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,paragraph,6,2,0.2,1.3212697645883469,5
+Public Announcement Rights Direction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,sentence,6,2,0.2,0.8636691690410621,5
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,chunk,8,8,0.2,2.4366577670007707,10
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,paragraph,6,2,0.2,1.920384788496754,13
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,sentence,6,10,0.2,0.9923053270794434,5
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,chunk,8,3,0.1,2.261461722593321,10
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,paragraph,6,10,0.2,1.5795657117560142,10
+Public Announcement Rights Direction,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,sentence,6,10,0.2,0.6712690744238442,4
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,chunk,8,8,0.2,3.2853705979327126,12
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,paragraph,5,10,0.2,2.4101954900521387,14
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,sentence,5,2,0.2,1.8239468673976762,7
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,chunk,8,8,0.2,2.5143261751718016,10
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,paragraph,5,10,0.2,2.038802615828354,10
+Public Announcement Rights Direction,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,sentence,5,2,0.2,1.301861191390202,8
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,chunk,11,10,0.2,3.22613303688624,13
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,paragraph,6,1,0.2,0.44658640180719433,3
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,sentence,6,3,0.2,2.4459630658804894,4
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,chunk,11,10,0.2,2.7781058213544565,12
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,paragraph,6,2,0.2,1.4738800059326307,5
+Public Announcement Rights Direction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,sentence,6,2,0.2,1.0704157575715607,5
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,chunk,10,2,0.2,4.814203538416718,19
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,paragraph,5,3,0.2,1.080425564633896,3
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,paragraph,sentence,5,2,0.2,0.9540968512634387,3
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,chunk,10,10,0.2,3.237023948014012,11
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,paragraph,5,2,0.2,1.1080310732275354,5
+Public Announcement Rights Present,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,32,sentence,sentence,5,2,0.2,1.1449402733995306,4
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,chunk,7,8,0.2,2.4366577670007707,10
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,paragraph,5,2,0.2,1.920384788496754,13
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,paragraph,sentence,5,10,0.2,0.9923053270794434,5
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,chunk,7,7,0.1,2.645481353531511,11
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,paragraph,5,2,0.2,2.339489723276361,16
+Public Announcement Rights Present,Project Greenlight - KHLP3 - OTPP NDA.docx,48,sentence,sentence,5,10,0.2,1.0108122612900456,5
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,chunk,8,8,0.2,3.2853705979327126,12
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,paragraph,5,10,0.2,2.4101954900521387,14
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,paragraph,sentence,5,2,0.2,1.8239468673976762,7
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,chunk,8,10,0.2,3.0461508649724407,11
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,paragraph,5,10,0.2,2.3939329945409438,11
+Public Announcement Rights Present,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,10,sentence,sentence,5,2,0.2,2.1720273855163374,8
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,chunk,10,10,0.2,3.22613303688624,13
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,paragraph,5,1,0.2,0.44658640180719433,3
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,paragraph,sentence,5,3,0.2,2.4459630658804894,4
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,chunk,10,2,0.2,2.7469808276943994,8
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,paragraph,5,2,0.2,2.693816381707788,6
+Public Announcement Rights Present,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,8,sentence,sentence,5,2,0.2,0.8405024618246539,4
+Receiving Party Entity Type,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,chunk,8,2,0.1,1.1521107674261257,12
+Receiving Party Entity Type,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,paragraph,4,2,0.1,2.045347555839076,16
+Receiving Party Entity Type,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,sentence,5,2,0.1,2.2201034733007345,13
+Receiving Party Entity Type,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,chunk,8,7,0.1,0.5057023257275707,10
+Receiving Party Entity Type,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,sentence,5,8,0.05,1.4585110069181075,15
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,paragraph,paragraph,1,1,0.1,1.0490416107235707,8
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,paragraph,sentence,1,1,0.1,1.0155457125895604,8
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,sentence,chunk,1,6,0.1,0.27176852050112826,3
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,chunk,1,8,0.05,0.12415349478719293,8
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,paragraph,1,3,0.2,0.7129242440808546,4
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,sentence,1,3,0.2,0.5701514617586007,4
+Receiving Party Entity Type,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,sentence,chunk,1,3,0.05,0.13603834597806108,7
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,paragraph,chunk,13,10,0.2,1.449862660240338,5
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,paragraph,paragraph,7,6,0.2,0.5611484195029047,4
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,paragraph,sentence,7,7,0.2,0.5244901290196915,4
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,sentence,chunk,13,3,0.1,2.564494222583081,11
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,sentence,paragraph,7,3,0.2,1.2520476601840387,5
+Receiving Party Jurisdiction,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,55,sentence,sentence,7,3,0.2,0.7706746127568513,4
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,paragraph,chunk,14,7,0.1,1.7404291305741113,11
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,paragraph,paragraph,7,6,0.1,0.6208588340698179,4
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,paragraph,sentence,7,4,0.1,0.6655858859611571,4
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,sentence,chunk,14,3,0.1,2.4136425865846753,8
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,sentence,paragraph,7,3,0.2,1.0682427750880616,3
+Receiving Party Jurisdiction,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,33,sentence,sentence,7,1,0.2,1.2034348158274975,3
+Receiving Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,paragraph,chunk,55,8,0.2,1.581622943095264,7
+Receiving Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,chunk,55,7,0.1,1.7429499509876794,9
+Receiving Party Name,SRT NDA Master Template (OTPP Markup v2).docx,2,sentence,paragraph,15,2,0.05,1.2868086034192567,22
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,paragraph,chunk,32,10,0.2,1.002983584524788,4
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,paragraph,paragraph,5,2,0.2,1.135406538556497,6
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,paragraph,sentence,5,2,0.2,1.183424802329027,6
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,17,sentence,chunk,32,10,0.2,1.210738195365239,4
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,chunk,32,7,0.1,1.9511082467806529,10
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,paragraph,5,1,0.1,1.1152069535020537,10
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,paragraph,sentence,5,1,0.2,1.045803872202798,5
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,18,sentence,chunk,32,7,0.1,1.8850821542623055,9
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,paragraph,chunk,56,10,0.2,1.6355793238435996,9
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,paragraph,paragraph,14,8,0.1,0.8537510431881139,19
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,paragraph,sentence,16,8,0.1,0.9124334853397054,19
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,sentence,chunk,56,10,0.2,2.091494984116485,10
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,sentence,paragraph,14,8,0.1,0.48828712965996723,20
+Receiving Party Name,YellowstoneB2B-OTPP-03-06-2026.docx,14,sentence,sentence,16,8,0.1,0.4729718328588033,20
+Representative Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,9,6,0.1,4.857081583899897,10
+Representative Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,36,10,0.2,2.1008813650110505,11
+Representative Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,9,1,0.1,1.3114303370629468,7
+Representative Categories,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,sentence,9,2,0.2,3.637382785387458,10
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,chunk,35,10,0.2,2.6218717821805106,11
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,paragraph,9,2,0.2,1.7620561662243308,9
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,sentence,9,2,0.2,3.9352654160171765,10
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,chunk,35,3,0.1,3.879469701933789,16
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,paragraph,9,10,0.2,2.010942143840862,15
+Representative Categories,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,sentence,9,10,0.2,1.681492040294399,12
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,paragraph,chunk,23,4,0.05,0.8837325219515155,3
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,chunk,23,2,0.1,2.399800819410164,12
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,paragraph,7,1,0.1,1.7427614998177674,5
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,7,sentence,sentence,7,2,0.2,1.7067935891929265,5
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,chunk,23,7,0.1,2.6568597060982544,15
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,paragraph,7,2,0.2,1.315370000291014,7
+Representative Categories,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,7,sentence,sentence,7,2,0.2,0.8909927064795808,6
+Requires Sub NDA,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,9,2,0.2,1.9983138027531004,7
+Requires Sub NDA,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,27,3,0.1,2.9937442469199547,14
+Requires Sub NDA,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,9,2,0.2,2.1298629387575416,8
+Requires Sub NDA,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,9,2,0.2,2.4057307517171846,7
+Requires Sub NDA,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,27,2,0.2,2.696446786699073,14
+Requires Sub NDA,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,9,10,0.2,1.3798644332321608,6
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,chunk,20,10,0.2,2.497193197780133,8
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,paragraph,7,2,0.2,2.965794356184312,10
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,paragraph,sentence,7,2,0.2,1.302314801841796,8
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,chunk,20,1,0.1,2.170454397181419,12
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,paragraph,7,2,0.2,2.622880365704056,9
+Requires Sub NDA,SRT NDA Master Template (OTPP Markup v2).docx,16,sentence,sentence,7,2,0.2,2.2582254604148764,9
+Requires Sub NDA,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,chunk,22,8,0.2,1.829190144328766,8
+Requires Sub NDA,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,paragraph,8,1,0.2,0.919175155304789,3
+Requires Sub NDA,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,sentence,8,1,0.2,0.8918813906141899,3
+Requires Sub NDA,YellowstoneB2B-OTPP-03-06-2026.docx,0,sentence,chunk,22,8,0.2,1.7431209337741307,9
+Return Destruction Legal Retention Exception,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,paragraph,chunk,9,10,0.2,1.3546952839530428,4
+Return Destruction Legal Retention Exception,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,paragraph,sentence,6,1,0.1,1.6671218504223215,8
+Return Destruction Legal Retention Exception,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,sentence,chunk,9,8,0.2,1.986273677774508,12
+Return Destruction Legal Retention Exception,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,sentence,paragraph,6,1,0.1,1.0857237785188867,8
+Return Destruction Legal Retention Exception,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,sentence,sentence,6,10,0.2,0.33273043154300364,4
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,paragraph,chunk,8,10,0.2,1.319731959009955,5
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,paragraph,paragraph,6,1,0.2,2.214739887852944,6
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,paragraph,sentence,6,1,0.1,1.8131806833085309,7
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,sentence,chunk,8,2,0.2,2.617378421924997,13
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,sentence,paragraph,6,2,0.2,1.3087485403236474,8
+Return Destruction Legal Retention Exception,Project Greenlight - KHLP3 - OTPP NDA.docx,16,sentence,sentence,6,2,0.2,1.1027189297619273,5
+Return Destruction Legal Retention Exception,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,paragraph,chunk,9,10,0.2,0.7603442522478366,3
+Return Destruction Legal Retention Exception,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,paragraph,sentence,6,2,0.2,1.9325880692607245,7
+Return Destruction Legal Retention Exception,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,sentence,chunk,9,7,0.1,1.630589907645822,14
+Return Destruction Legal Retention Exception,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,sentence,paragraph,6,1,0.1,1.6438369273790268,8
+Return Destruction Legal Retention Exception,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,sentence,sentence,6,10,0.2,0.5690155345002037,4
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,chunk,9,10,0.2,1.585646476467547,7
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,paragraph,6,2,0.2,2.7125882162640895,9
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,sentence,6,2,0.2,2.4498677762868093,9
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,chunk,9,10,0.2,1.8575244153756472,6
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,paragraph,6,2,0.2,1.9677236556583946,7
+Return Destruction Legal Retention Exception,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,sentence,6,10,0.2,0.8190501034624639,4
+Return Destruction Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,paragraph,chunk,21,10,0.2,1.5090378775311508,4
+Return Destruction Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,paragraph,sentence,8,1,0.1,3.833009024026754,13
+Return Destruction Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,sentence,chunk,21,10,0.2,1.590334455617851,5
+Return Destruction Required,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,34,sentence,paragraph,8,10,0.2,0.69880366323655,4
+Return Destruction Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,paragraph,chunk,21,10,0.2,0.8099515454806793,3
+Return Destruction Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,paragraph,sentence,8,2,0.2,2.149592027559226,7
+Return Destruction Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,sentence,chunk,21,10,0.2,0.8429678764871884,3
+Return Destruction Required,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,10,sentence,paragraph,8,10,0.2,0.3770211007308761,3
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,chunk,21,10,0.2,1.6216388175575331,7
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,paragraph,8,2,0.2,2.871282873194458,9
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,paragraph,sentence,8,2,0.2,2.5566610425586056,9
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,chunk,21,1,0.1,1.321593141641677,8
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,paragraph,8,2,0.2,1.4572387651659156,7
+Return Destruction Required,SRT NDA Master Template (OTPP Markup v2).docx,23,sentence,sentence,8,2,0.2,1.16867482914502,6
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,3,10,0.2,1.6459925198482859,14
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,2,2,0.2,0.8682886778098208,8
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,2,2,0.2,1.81445794918246,8
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,3,3,0.1,2.880595423978316,14
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,2,10,0.2,1.2153761286858173,14
+Securities Provisions Present,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,2,2,0.2,1.2430612089627355,9
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,chunk,6,10,0.2,2.0790755777967935,9
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,paragraph,2,2,0.2,1.3444558559064392,9
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,sentence,2,2,0.2,1.625338123783438,10
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,chunk,6,10,0.2,2.0116143511879656,8
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,paragraph,2,1,0.1,1.5415132473860105,12
+Securities Provisions Present,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,sentence,2,2,0.2,2.248829314412698,11
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,chunk,3,10,0.2,1.6459925198482859,14
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,paragraph,2,2,0.2,0.8682886778098208,8
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,paragraph,sentence,2,2,0.2,1.81445794918246,8
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,chunk,3,3,0.1,2.880595423978316,14
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,paragraph,2,10,0.2,1.2153761286858173,14
+Securities Provisions Type,Project Greenlight - KHLP3 - OTPP NDA.docx,9,sentence,sentence,2,2,0.2,1.2430612089627355,9
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,chunk,6,10,0.2,2.0790755777967935,9
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,paragraph,2,2,0.2,1.3444558559064392,9
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,paragraph,sentence,2,2,0.2,1.625338123783438,10
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,chunk,6,10,0.2,2.0116143511879656,8
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,paragraph,2,1,0.1,1.5415132473860105,12
+Securities Provisions Type,SRT NDA Master Template (OTPP Markup v2).docx,33,sentence,sentence,2,2,0.2,2.248829314412698,11
+Standard Of Care,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,paragraph,sentence,6,1,0.2,2.3387214146240627,7
+Standard Of Care,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,chunk,21,8,0.2,2.2456719098357585,11
+Standard Of Care,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,31,sentence,paragraph,6,10,0.2,1.149473788837823,6
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,paragraph,chunk,18,10,0.2,2.315656499803607,10
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,paragraph,paragraph,6,2,0.2,2.062315151232323,9
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,paragraph,sentence,6,2,0.2,1.9950610360553385,7
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,sentence,chunk,18,3,0.1,3.243498955417352,16
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,sentence,paragraph,6,1,0.1,1.5694207413534185,13
+Standard Of Care,Project Greenlight - KHLP3 - OTPP NDA.docx,13,sentence,sentence,6,2,0.2,1.1391690788730586,7
+Standard Of Care,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,paragraph,sentence,6,1,0.2,2.440296743351437,7
+Standard Of Care,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,chunk,21,7,0.1,2.0672575419416246,13
+Standard Of Care,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,paragraph,6,10,0.2,1.2852283203448593,6
+Standard Of Care,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,7,sentence,sentence,6,1,0.1,1.9552491693643033,9
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,chunk,18,3,0.1,4.275115175777507,16
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,paragraph,6,1,0.1,2.012453818856936,13
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,paragraph,sentence,6,2,0.2,1.1415980032154325,9
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,chunk,18,3,0.1,3.818333919898367,14
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,paragraph,6,2,0.2,2.0312915023564084,15
+Standard Of Care,SRT NDA Master Template (OTPP Markup v2).docx,14,sentence,sentence,6,10,0.2,1.0377915834359261,5
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,paragraph,chunk,3,4,0.1,1.334599564257574,6
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,paragraph,paragraph,1,2,0.2,0.44445731976804537,3
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,paragraph,sentence,1,2,0.2,0.5806877984028125,3
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,chunk,3,1,0.05,0.9612485945038094,5
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,paragraph,1,2,0.2,0.3740059681707376,3
+Survival Period Months,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,17,sentence,sentence,1,2,0.2,1.7724452202865717,4
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,paragraph,chunk,3,10,0.2,1.0949012757731995,11
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,paragraph,paragraph,1,10,0.2,0.41468193450650187,15
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,paragraph,sentence,1,2,0.2,1.4900871424868025,9
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,chunk,3,10,0.2,0.6286974254035407,7
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,paragraph,1,2,0.2,0.8314874629075371,10
+Termination Auto On Transaction,SRT NDA Master Template (OTPP Markup v2).docx,78,sentence,sentence,1,2,0.2,1.2725101227411888,8
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,chunk,3,2,0.05,0.3078884263119822,10
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,paragraph,1,2,0.2,0.6542113777525608,7
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,paragraph,sentence,1,2,0.2,0.9704274141756648,8
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,chunk,3,10,0.1,0.5730677298035932,9
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,paragraph,1,2,0.2,0.6480899164477831,7
+Termination For Convenience,Project Greenlight - KHLP3 - OTPP NDA.docx,18,sentence,sentence,1,2,0.2,1.0270149036161724,8
+Title,SRT NDA Master Template (OTPP Markup v2).docx,0,paragraph,chunk,52,6,0.2,2.166863627983006,9
+Title,SRT NDA Master Template (OTPP Markup v2).docx,0,sentence,chunk,52,3,0.1,2.000993051946918,9
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,chunk,52,7,0.1,1.9938119056762578,13
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,paragraph,14,2,0.2,1.102717787086759,3
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,paragraph,sentence,14,10,0.2,0.8106886696770185,3
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital - Executed.pdf,0,sentence,chunk,52,7,0.1,1.9786172613179374,13
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,chunk,52,7,0.1,2.0238982206621223,13
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,paragraph,14,2,0.2,1.0940503457195654,3
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,paragraph,sentence,14,2,0.2,1.105236603881948,3
+Title,YellowstoneB2B-OTPP-03-06-2026 - Antares Capital_revDM-OTPP redline-3-10-2026_revDM02.docx,0,sentence,chunk,52,7,0.1,2.0032500538585065,13
+Title,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,chunk,52,7,0.1,1.9289939036299875,13
+Title,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,paragraph,14,2,0.2,1.0966081224622883,3
+Title,YellowstoneB2B-OTPP-03-06-2026.docx,0,paragraph,sentence,14,2,0.2,1.1073184198316932,3
+Title,YellowstoneB2B-OTPP-03-06-2026.docx,0,sentence,chunk,52,7,0.1,1.9263696181719028,13
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,chunk,21,10,0.2,1.3628199841371227,7
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,paragraph,5,2,0.2,1.0550413648913364,4
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,sentence,5,2,0.2,0.49944577349358177,3
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,chunk,21,10,0.2,1.202386757890829,9
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,paragraph,5,1,0.2,1.2707431820370685,5
+Venue,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,sentence,5,1,0.2,1.3742352132899374,5
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,chunk,17,2,0.2,1.9107101385501868,8
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,paragraph,5,2,0.2,1.4949659936932096,7
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,sentence,5,1,0.2,1.3227047145004693,3
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,chunk,17,10,0.2,1.8442430631645588,9
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,paragraph,5,2,0.2,1.5121610386914246,8
+Venue,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,sentence,5,1,0.2,0.71963214108817,3
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,chunk,20,8,0.2,2.5973453096545382,12
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,paragraph,5,1,0.1,1.8350249361400692,14
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,paragraph,sentence,5,1,0.1,1.2204393390258128,11
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,chunk,20,1,0.1,2.4653533221175787,9
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,paragraph,5,2,0.2,1.6230134498693747,5
+Venue,Project Waypoint - Ontario - NDA - OTPP  3.11.26 (execution) .pdf,15,sentence,sentence,5,1,0.1,5.419234780414863,9
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,21,1,0.1,3.892504934214069,13
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,5,2,0.2,3.583283279156956,9
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,5,2,0.2,1.2779275381787472,8
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,21,10,0.2,2.1606941296682205,9
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,paragraph,5,10,0.2,1.3442440744990964,5
+Venue,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,5,2,0.2,0.7514811770841066,4
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,chunk,25,10,0.2,1.099046526180869,6
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,paragraph,7,4,0.05,4.416472041773579,9
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,paragraph,sentence,7,4,0.05,4.07430502200045,6
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,chunk,25,8,0.2,2.2839183752520866,10
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,paragraph,7,2,0.2,1.1723381679884861,7
+Venue Exclusive,ACM - Eide Bailly (OTPP) - Joinder - 2026.03.17 - Executed.pdf,39,sentence,sentence,7,10,0.2,1.3021726143673606,14
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,chunk,21,2,0.2,1.6028842964111545,7
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,paragraph,7,2,0.2,1.2263519150380084,6
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,paragraph,sentence,7,1,0.2,1.405302207713274,3
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,chunk,21,10,0.2,2.078214999610617,9
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,paragraph,7,2,0.2,0.6866091077123038,6
+Venue Exclusive,Project Greenlight - KHLP3 - OTPP NDA.docx,52,sentence,sentence,7,2,0.2,0.8110497515392874,3
+Venue Exclusive,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,paragraph,chunk,25,10,0.2,1.4043371730294911,9
+Venue Exclusive,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,paragraph,paragraph,7,2,0.2,0.7383995416656111,3
+Venue Exclusive,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,chunk,25,8,0.2,2.2368116082509597,10
+Venue Exclusive,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,paragraph,7,2,0.2,1.5067104408924257,7
+Venue Exclusive,Project_Yellowstone_-_Ontario_-_V5_-_OTPP[Executed_1-9-2026].docx.pdf,16,sentence,sentence,7,2,0.2,1.665273543042611,14
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,chunk,25,1,0.1,2.6747180384738796,11
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,paragraph,7,2,0.2,3.4451309627071196,8
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,paragraph,sentence,7,2,0.2,0.9916544037147003,7
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,chunk,25,2,0.2,1.2390401581072141,6
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,paragraph,7,2,0.2,1.447050325185102,7
+Venue Exclusive,SRT NDA Master Template (OTPP Markup v2).docx,31,sentence,sentence,7,10,0.2,0.4077293594028725,3

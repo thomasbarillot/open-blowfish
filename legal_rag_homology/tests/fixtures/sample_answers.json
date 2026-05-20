@@ -1,0 +1,26 @@
+{
+  "real_single": {
+    "text": "The Court in Miranda v. Arizona, 384 U.S. 436 (1966), established a rule.",
+    "expected_citations": ["384 U.S. 436"]
+  },
+  "real_with_quote": {
+    "text": "As stated in Roe v. Wade, 410 U.S. 113 (1973), \"the right of privacy is broad.\"",
+    "expected_citations": ["410 U.S. 113"]
+  },
+  "two_citations": {
+    "text": "See Smith v. Jones, 123 F.3d 456 (9th Cir. 2010); Doe v. Roe, 789 F.2d 12 (2d Cir. 1985).",
+    "expected_citations": ["123 F.3d 456", "789 F.2d 12"]
+  },
+  "fabricated": {
+    "text": "As held in Fake v. Imaginary, 999 U.S. 999 (2099), the rule applies.",
+    "expected_citations": ["999 U.S. 999"]
+  },
+  "no_citation": {
+    "text": "This answer cites no cases at all.",
+    "expected_citations": []
+  },
+  "two_citations_with_quotes": {
+    "text": "The Court held \"privacy is broad,\" Roe v. Wade, 410 U.S. 113. Elsewhere, \"commerce is plenary,\" Gibbons v. Ogden, 22 U.S. 1.",
+    "expected_citations": ["410 U.S. 113", "22 U.S. 1"]
+  }
+}
