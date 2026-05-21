@@ -1,0 +1,114 @@
+{
+  "name": "cc_news_finance",
+  "version": "v1",
+  "description": "Modern news articles harvested from CommonCrawl-news (HuggingFace 'cc_news' dataset), filtered to WSJ + FT + Bloomberg + Reuters domains. Modern equivalent of WSJ/FT news (with the caveat that actual paywalled WSJ/FT articles are sparse; CommonCrawl mostly captures intro paragraphs and free-to-read pieces).",
+  "license": "varies",
+  "source": "huggingface_cc_news",
+  "bootstrap_recipe": "cc_news_finance",
+  "documents": [
+    {
+      "doc_id": "ccn_bloomberg_050662_citadel_securities_eyes_expansion_in_treasuries",
+      "title": "Citadel Securities Eyes Expansion in Treasuries, Swaps Trading",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-04-24/citadel-securities-eyes-expansion-in-treasuries-swaps-trading",
+      "date": "2018-04-24 11:15:47",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-04-24/citadel-securities-eyes-expansion-in-treasuries-swaps-trading"
+      ],
+      "sha256": "a9a9ec43cc377d8cf931387c5b0d2e17b25d5f55ea36b78e6a388ede5ee30d4d",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050665_wells_fargo_leaves_a_potential_subprime_smudge_o",
+      "title": "Wells Fargo Leaves a Potential Subprime Smudge on Its Way to Squeaky Clean",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/gadfly/articles/2018-04-24/wells-fargo-leaves-a-potential-smudge-in-squeaky-clean",
+      "date": "2018-04-24 15:12:10",
+      "mirror_urls": [
+        "https://www.bloomberg.com/gadfly/articles/2018-04-24/wells-fargo-leaves-a-potential-smudge-in-squeaky-clean"
+      ],
+      "sha256": "3c68a7e5c24834aa175bdfb30bd5f4a5e2c2eb72ba41019fba24569cb26f525a",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050666_five_things_you_need_to_know_to_start_your_day",
+      "title": "Five Things You Need to Know to Start Your Day",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-04-24/five-things-you-need-to-know-to-start-your-day-jge5sg5p",
+      "date": "2018-04-24 21:04:45",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-04-24/five-things-you-need-to-know-to-start-your-day-jge5sg5p"
+      ],
+      "sha256": "48a76edae6b3054374db3a39629fdcdf8695039db8261eddb4f91b04f3e9955b",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050667_the_american_president_doesn_t_have_to_be_born_a",
+      "title": "The American President Doesn't Have to Be Born American",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/view/articles/2018-04-24/end-the-natural-born-citizen-requirement-for-presidents",
+      "date": "2018-04-24 20:38:29",
+      "mirror_urls": [
+        "https://www.bloomberg.com/view/articles/2018-04-24/end-the-natural-born-citizen-requirement-for-presidents"
+      ],
+      "sha256": "4292957091664ff4c7a4378485afc7f1eb533088b5c7ac1f46eef42dcdfb8bcf",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050668_namibia_says_revised_mining_act_to_be_finalized",
+      "title": "Namibia Says Revised Mining Act to Be Finalized by Year-End",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-04-24/namibia-says-revised-mining-act-to-be-finalized-by-year-end",
+      "date": "2018-04-24 16:30:15",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-04-24/namibia-says-revised-mining-act-to-be-finalized-by-year-end"
+      ],
+      "sha256": "73b63c7c010b94dee446c27f7f777c073413f9fa415a8af8823bc6f532412e92",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050669_coke_finds_out_that_americans_still_love_their_s",
+      "title": "Coke Finds Out That Americans Still Love Their Soda After All",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-04-24/coke-finds-out-that-americans-still-love-their-soda-after-all",
+      "date": "2018-04-24 13:18:33",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-04-24/coke-finds-out-that-americans-still-love-their-soda-after-all"
+      ],
+      "sha256": "c7691e0ad2d0fc93bc6f5f0eb618e75894e7b582a87e41ae52bff2dd03e47daa",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050670_day_one_at_the_g_20__where_we_stand_on_top_world",
+      "title": "Day One at the G-20: Where We Stand on Top World Economic Issues",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-19/day-one-at-the-g-20-where-we-stand-on-top-world-economic-issues",
+      "date": "2018-03-19 21:54:57",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-03-19/day-one-at-the-g-20-where-we-stand-on-top-world-economic-issues"
+      ],
+      "sha256": "be23d7a00afa18234fb33f5fbe442e8f0d94ee31b32bb6eaffc001d7c399b9d0",
+      "license": "varies",
+      "source": "cc_news"
+    },
+    {
+      "doc_id": "ccn_bloomberg_050671_deutsche_bank_taps_career_insider_kuhnke_for_key",
+      "title": "Deutsche Bank Taps Career Insider Kuhnke for Key Operations Role",
+      "domain": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2018-04-24/deutsche-bank-names-frank-kuhnke-as-coo-replacing-kim-hammonds",
+      "date": "2018-04-24 11:22:15",
+      "mirror_urls": [
+        "https://www.bloomberg.com/news/articles/2018-04-24/deutsche-bank-names-frank-kuhnke-as-coo-replacing-kim-hammonds"
+      ],
+      "sha256": "ca4a8c47fafb84eab486e76d918331074dc78c3acb13a9bc6006175ee6209614",
+      "license": "varies",
+      "source": "cc_news"
+    }
+  ]
+}

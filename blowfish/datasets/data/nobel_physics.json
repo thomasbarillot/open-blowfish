@@ -1,0 +1,112 @@
+{
+  "_schema_version": 1,
+  "_corpus_name": "nobel_physics",
+  "_description": "Nobel Prize in Physics lecture transcripts. Manifest format: each entry is {doc_id, title, year, laureate, mirror_urls[], sha256, license}. Mirror URLs are tried in order; the first whose payload matches sha256 wins. Suggested primary sources: nobelprize.org lecture archive (HTML → text); mirrors: en.wikisource.org Nobel lectures, archive.org. Populate `documents[]` before running on real data; tests use monkey-patched downloads against locally-staged fixtures.",
+  "_license_note": "Lecture text licensing varies by laureate / year. Always record the per-lecture license in the entry's `license` field before redistributing.",
+  "documents": [
+    {
+      "doc_id": "einstein_1921",
+      "title": "Albert Einstein",
+      "year": 1921,
+      "laureate": "Albert Einstein",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Albert_Einstein&oldid=1355112534"
+      ],
+      "sha256": "e15a50268a54e23f70f8f17116b32bbe163abc324cd23217f6af99e1d0250eb9",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1355112534
+    },
+    {
+      "doc_id": "dirac_1933",
+      "title": "Paul Dirac",
+      "year": 1933,
+      "laureate": "Paul Dirac",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Paul_Dirac&oldid=1355158676"
+      ],
+      "sha256": "038847f923382f98b4cf0d2e9f400cd7de9f441d1f08567de87b695fbc78b92f",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1355158676
+    },
+    {
+      "doc_id": "feynman_1965",
+      "title": "Richard Feynman",
+      "year": 1965,
+      "laureate": "Richard Feynman",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Richard_Feynman&oldid=1353892313"
+      ],
+      "sha256": "3e162685626ca280097733657244023ece9c1fbd13732224c64017a3f0296c8c",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1353892313
+    },
+    {
+      "doc_id": "chandrasekhar_1983",
+      "title": "Subrahmanyan Chandrasekhar",
+      "year": 1983,
+      "laureate": "Subrahmanyan Chandrasekhar",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Subrahmanyan_Chandrasekhar&oldid=1353107552"
+      ],
+      "sha256": "5d439ba53670ca9d881ce154d6eab3a0a17337e4625d56482df761590ad84204",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1353107552
+    },
+    {
+      "doc_id": "weinberg_1979",
+      "title": "Steven Weinberg",
+      "year": 1979,
+      "laureate": "Steven Weinberg",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Steven_Weinberg&oldid=1346066562"
+      ],
+      "sha256": "d27e5f6e9520f78eba2b58f2bdb71ae177b81145b8a9ba8b8b3530054ba7892d",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1346066562
+    },
+    {
+      "doc_id": "penrose_2020",
+      "title": "Roger Penrose",
+      "year": 2020,
+      "laureate": "Roger Penrose",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Roger_Penrose&oldid=1354489127"
+      ],
+      "sha256": "f8d5cfd6ad10538f8a3cd6b2534d1c36cf1a23f5e9d18a917b695cae42a8a1a0",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1354489127
+    },
+    {
+      "doc_id": "ghez_2020",
+      "title": "Andrea M. Ghez",
+      "year": 2020,
+      "laureate": "Andrea Ghez",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Andrea_M._Ghez&oldid=1347415688"
+      ],
+      "sha256": "036a1962078b2f0c754991fbda95b96f4e2275f5fe648e773e2f1db251892fb5",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1347415688
+    },
+    {
+      "doc_id": "strickland_2018",
+      "title": "Donna Strickland",
+      "year": 2018,
+      "laureate": "Donna Strickland",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Donna_Strickland&oldid=1345285337"
+      ],
+      "sha256": "4fd510ae235599e21b25449cc038a22f9afe843e934998921abed8a5e3d02f63",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1345285337
+    }
+  ]
+}

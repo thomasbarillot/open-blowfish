@@ -27,3 +27,14 @@ DEFAULT_KDE_FEATURES = ["scale_mean",
 # Paper (arXiv:2406.07990, §3.6) uses k=50; H₁ features need enough neighbors to be stable.
 PAPER_TOP_K_RESULTS = 50
 MIN_TOP_K_FOR_TOPOLOGY_WARNING = 15
+
+# Evaluation / experiment infrastructure (introduced in the eval/baselines/RAG PR).
+DEFAULT_BOOTSTRAP_SAMPLES = 10_000
+DEFAULT_COST_PENALTIES = (1.0, 3.0, 10.0)
+DEFAULT_ABSTAIN_RATES = (0.10, 0.20, 0.30)
+BASELINE_IDS = ("B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9")
+GATING_POLICY_IDS = ("G0", "G1", "G2", "G3", "G4", "G5", "G6")
+
+# Dataset sweep cache.
+CACHE_DIR_ENV = "BLOWFISH_CACHE_DIR"
+MANIFEST_SCHEMA_VERSION = 1

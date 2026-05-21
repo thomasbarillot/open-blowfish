@@ -270,17 +270,50 @@ external validity.
 
 ### 5.3 System under test
 
-Fixed across all conditions:
+Fixed within a single experimental cell; swept across cells per §5.3.1:
 
-- Embedding model (one of: `text-embedding-3-small`, `bge-large`, `e5-mistral`).
-- Retriever: FAISS `IndexFlatIP` on unit-normalized embeddings (matches paper
+- **Corpus chunker** (see §5.3.1).
+- **Embedding model** (one of: `text-embedding-3-small`, `bge-large`, `e5-mistral`).
+- **Retriever**: FAISS `IndexFlatIP` on unit-normalized embeddings (matches paper
   cosine convention).
-- Generator: a frozen LLM (e.g. `gpt-4o-mini`, `claude-haiku-4-5`,
+- **Generator**: a frozen LLM (e.g. `gpt-4o-mini`, `claude-haiku-4-5`,
   `llama-3.1-8b-instruct`).
-- Prompt template: published verbatim in the paper appendix.
+- **Prompt template**: published verbatim in the paper appendix.
 - `k = 50` retrieved chunks per query.
 
-Only the **gating policy** varies across conditions.
+The **gating policy** is the primary IV (§5.4); the chunker and embedding
+model are secondary IVs whose effects are measured in the sensitivity grid.
+
+### 5.3.1 Text segmentation as a swept axis
+
+Chunking matters: the paper's `C₂₅₀` vs. `C₇₅₀` comparison conflates *token
+budget* with *number of curated topics*. To disentangle them — and to make
+the Blowfish topology features comparable across granularities — chunking
+becomes an explicit experimental dimension. Four concrete chunkers cover
+the axes; all four implement the package's `Chunker` Protocol so the
+experiment harness sweeps them uniformly.
+
+| Chunker | Implementation | Why this one |
+|---|---|---|
+| `SentenceChunker` | `pysbd` (default) or `spaCy` opt-in via `[datasets-spacy]` extra | Smallest principled semantic unit; deterministic, multilingual, no data download. Matches paper's "fine" chunking axis. |
+| `ParagraphChunker` | In-repo regex on `\n\n+` separators | Mid-grain, structure-respecting, zero deps. Matches "coarse" axis. |
+| `RecursiveCharacterChunker` | `langchain-text-splitters.RecursiveCharacterTextSplitter` | The community baseline; required for cross-paper comparability. Tries paragraph → sentence → word → character in order. |
+| `TokenSlidingWindowChunker` | `tiktoken` (cl100k or o200k) | Token-budget aware; `size` and `stride` directly sweep the paper's `C_N` axis. Token-boundary-correct against modern LLM context windows. |
+
+**Sweep grid (locked):**
+
+- `chunker ∈ {Sentence, Paragraph, Recursive(size=512, overlap=64), Token(size=250), Token(size=500), Token(size=750)}` — six cells covering the paper's chunk-length range plus the two structural extremes.
+- `tokenizer ∈ {cl100k_base, o200k_base}` only for the token chunker. `o200k` is the modern OpenAI / Anthropic-compatible BPE; `cl100k` is the legacy default.
+- Embedding × chunker is a full Cartesian product in the sensitivity grid (§3.3) for the top-3 embedding models; for the long tail we report a single chunker for cost.
+
+**Documented but deferred to a follow-up PR** (rationale in parentheses):
+
+- **Semantic chunkers** — `LlamaIndex.SemanticSplitterNodeParser`, `langchain.text_splitter.SemanticChunker`, `chonkie.SemanticChunker` (introduces embedder-dependence into a primitive that should be embedder-independent; complicates the sensitivity grid).
+- **Late chunking** — Jina-AI 2024 (embed the full document with a long-context model, pool over chunk boundaries). Ties the experiment to a specific embedding-model family; defer until Jina or a comparable open model is locked.
+- **Hierarchical chunkers** — multi-resolution (small for retrieval, large for context). Worth ablating but doubles the matrix; deferred.
+- **Markdown / HTML structure-aware splitters** — Nobel and Fields lecture text isn't reliably structured; not load-bearing for this corpus.
+
+**Reproducibility**: every chunker writes its `chunker_params` (size, overlap, separators, library, library version) into the `DatasetManifest`, which is sha256-hashed into the cache key. Re-running with the same params hits the cache; changing any param invalidates it. This makes every reported number in §5.5 reconstructable from its manifest hash alone.
 
 ### 5.4 Gating policies (the IV)
 

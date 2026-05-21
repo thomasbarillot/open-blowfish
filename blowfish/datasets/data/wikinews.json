@@ -1,0 +1,104 @@
+{
+  "_schema_version": 1,
+  "_corpus_name": "wikinews",
+  "_description": "Wikinews articles, CC-BY 2.5 — the fully open-license equivalent of WSJ-style news (actual WSJ corpora are LDC-paywalled). Manifest format: each entry is {doc_id, title, category, mirror_urls[], sha256, license, source, oldid}. Populated by scripts/bootstrap_corpora.py from category-discovery against en.wikinews.org.",
+  "_license_note": "All entries CC-BY 2.5; attribution preserved via title + source + oldid in each entry.",
+  "documents": [
+    {
+      "doc_id": "wn_economyandbusiness_united_states_announces_blockade_on_the_strait_o",
+      "title": "United States announces blockade on the Strait of Hormuz",
+      "category": "Economy_and_business",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=United_States_announces_blockade_on_the_Strait_of_Hormuz&oldid=5013889"
+      ],
+      "sha256": "3d7ddb0c308225eef71389930501df93fee7752b015fdf477353ac49773304fe",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5013889
+    },
+    {
+      "doc_id": "wn_economyandbusiness_australian_minister_for_energy_lowers_fuel_stand",
+      "title": "Australian Minister for Energy lowers fuel standards for 60 days amid rising oil prices, panic buying",
+      "category": "Economy_and_business",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Australian_Minister_for_Energy_lowers_fuel_standards_for_60_days_amid_rising_oil_prices,_panic_buying&oldid=5024646"
+      ],
+      "sha256": "563669355704f4e75e03d7b162eff39ec2d6851bcd1b4056a294a50d9d308a43",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5024646
+    },
+    {
+      "doc_id": "wn_economyandbusiness_nsw_government_proposes_rezoning_to_create_resid",
+      "title": "NSW government proposes rezoning to create residences midway between Sydney and Parramatta",
+      "category": "Economy_and_business",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=NSW_government_proposes_rezoning_to_create_residences_midway_between_Sydney_and_Parramatta&oldid=5024648"
+      ],
+      "sha256": "fd470a112ed8ae629b7b222076da6ad041bf702ff4c573d2dd71ead648e991da",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5024648
+    },
+    {
+      "doc_id": "wn_economyandbusiness_monta_publishes_its_2025_ev_charger_ranking__inc",
+      "title": "Monta publishes its 2025 EV charger ranking, including hardware performance",
+      "category": "Economy_and_business",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Monta_publishes_its_2025_EV_charger_ranking,_including_hardware_performance&oldid=5024651"
+      ],
+      "sha256": "905a535b22ee53355422c5760ead341a116a2ec11bfeae2d0afd445689c29dbf",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5024651
+    },
+    {
+      "doc_id": "wn_politicsandconflicts_pope_leo_xiv_visits_four_nations_in_africa",
+      "title": "Pope Leo XIV visits four nations in Africa",
+      "category": "Politics_and_conflicts",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Pope_Leo_XIV_visits_four_nations_in_Africa&oldid=5024678"
+      ],
+      "sha256": "ee5159466d89ac75d91f021a783e41f1bf7c86727314bd1a9e1aef3b14dfa206",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5024678
+    },
+    {
+      "doc_id": "wn_politicsandconflicts_united_states_announces_blockade_on_the_strait_o",
+      "title": "United States announces blockade on the Strait of Hormuz",
+      "category": "Politics_and_conflicts",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=United_States_announces_blockade_on_the_Strait_of_Hormuz&oldid=5013889"
+      ],
+      "sha256": "3d7ddb0c308225eef71389930501df93fee7752b015fdf477353ac49773304fe",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5013889
+    },
+    {
+      "doc_id": "wn_politicsandconflicts_pm_of_australia_sends_e_7a_wedgetail_and_air_to",
+      "title": "PM of Australia sends E-7A Wedgetail and air-to-air missiles to UAE",
+      "category": "Politics_and_conflicts",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=PM_of_Australia_sends_E-7A_Wedgetail_and_air-to-air_missiles_to_UAE&oldid=5013891"
+      ],
+      "sha256": "f61c02b69ac01c2f37a485423774d6ef75dd6bcbe029f33ef794e4d896a24dfe",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5013891
+    },
+    {
+      "doc_id": "wn_politicsandconflicts_kennedy_center_gets_renamed_to_trump_kennedy_cen",
+      "title": "Kennedy Center gets renamed to Trump-Kennedy Center",
+      "category": "Politics_and_conflicts",
+      "mirror_urls": [
+        "https://en.wikinews.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Kennedy_Center_gets_renamed_to_Trump-Kennedy_Center&oldid=5020917"
+      ],
+      "sha256": "27c2a6cec0af6e6733aa5a842444ed2e4a62c8eb45bff1e970bd3451dd4974e0",
+      "license": "CC-BY-2.5",
+      "source": "wikinews",
+      "oldid": 5020917
+    }
+  ]
+}
