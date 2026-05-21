@@ -1,5 +1,6 @@
 from blowfish.inference.scorer import AmbiguityScorer
 import pandas as pd
+import pytest
 from pandas.testing import assert_frame_equal
 
 topic_features = {
@@ -81,6 +82,18 @@ def test_format_topics():
     assert_frame_equal(actual, expected)
 
 
+def test_format_topics_duplicate_hash_key_raises():
+    bad = pd.DataFrame({
+        "docname": ["doc1", "doc2"],
+        "chunk_embedding": [1.0, 2.0],
+        "label": [1, 3],
+        "silhouette_score": [0.7, 0.8],
+        "hash_key": ["same", "same"],
+    })
+    with pytest.raises(ValueError, match="unique hash_key"):
+        AmbiguityScorer(kde=None, topics_df=bad)
+
+
 def test_format_topics_missing_columns():
     bad_features = {
         "docname": ["doc1", "doc2"],
@@ -92,3 +105,24 @@ def test_format_topics_missing_columns():
     res = scorer.format_topics(fail_df)
 
     assert res == None
+
+
+def test_calculate_query_correctness_probability_returns_one_row(monkeypatch):
+    query_df = pd.DataFrame({
+        "score": [0.0, 0.2, 0.4],
+        "chunk_embeddings": [
+            [1.0, 0.0, 0.0, 0.0, 0.0],
+            [0.0, 1.0, 0.0, 0.0, 0.0],
+            [0.7, 0.7, 0.0, 0.0, 0.0],
+        ],
+        "query_embedding": [[0.0, 0.0, 0.0, 0.0, 0.0]] * 3,
+        "docname": ["doc1", "doc1", "doc2"],
+        "topic_label": ["doc1_1", "doc1_1", "doc2_3"],
+        "silhouette_score": [0.7, 0.8, 0.9],
+    })
+    monkeypatch.setattr(scorer, "get_correctness_probability", lambda sample: 0.42)
+
+    out = scorer.calculate_query_correctness_probability(query_df)
+
+    assert len(out) == 1
+    assert out.p_correct.iloc[0] == 0.42

@@ -1,288 +1,151 @@
 # Blowfish
 
-Blowfish is a library used to train a Gaussian KDE model to quantify and measure ambiguity in semantic search and also to perform inference on questions using the trained model.
-This is the official implementation of the research published by Thomas R. Barillot and Alex De Castro from BlackRock - [Blowfish: Topological and statistical signatures for quantifying ambiguity in semantic search](https://arxiv.org/abs/2406.07990).
+Library for quantifying ambiguity in semantic search via topological signatures of
+the query neighborhood, with a Gaussian KDE ratio used at inference time. Official
+implementation of [arXiv:2406.07990](https://arxiv.org/abs/2406.07990) (Barillot &
+De Castro).
 
-## Table of Contents
-
-- [Blowfish](#blowfish)
-  - [Table of Contents](#table-of-contents)
-  - [Abstract](#abstract)
-  - [Installation](#installation)
-  - [Project Structure](#project-structure)
-  - [Usage](#usage)
-    - [Ingestion](#ingestion)
-    - [Training](#training)
-    - [Inference](#inference)
-  - [Model Support](#model-support)
-  - [Configurations](#configurations)
-    - [Required Parameters](#required-parameters)
-    - [Optional Parameters](#optional-parameters)
-  - [KDE Features](#kde-features)
-  - [Example Inputs Visualized](#example-inputs-visualized)
-  - [Contribution](#contribution)
-  - [License](#license)
-  - [Credits](#credits)
-  - [Citation](#citation)
-
-## Abstract
-
-This works reports evidence for the topological signatures of ambiguity in sentence embeddings that could be leveraged for ranking and/or explanation purposes in the context of vector search and Retrieval Augmented Generation (RAG) systems. We proposed a working definition of ambiguity and designed an experiment where we have broken down a proprietary dataset into collections of chunks of varying size - 3, 5, and 10 lines and used the different collections successively as queries and answers sets. It allowed us to test the signatures of ambiguity with removal of confounding factors. Our results show that proxy ambiguous queries (size 10 queries against size 3 documents) display different distributions of homologies 0 and 1 based features than proxy clear queries (size 5 queries against size 10 documents). We then discuss those results in terms increased manifold complexity and/or approximately discontinuous embedding sub-manifolds. Finally we propose a strategy to leverage those findings as a new scoring strategy of semantic similarities.
+> **Read this first:**
+> [`PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md`](./PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md)
+> is the canonical scientific entry point — it covers the paper-level critique,
+> the upstream RAG experimental design, and the open scientific gaps. This README
+> is install + quickstart only.
 
 ## Installation
 
-### Prerequisites
-
 ```bash
-pip install -r requirements.txt
-```
-
-### From Source
-
-```bash
+pip install -r blowfish/requirements.txt
 pip install -e .
 ```
 
-## Project Structure
+Optional SHAP explanations (`FeedbackDecider`):
 
-This project is divided into 3 sections, each handling the specified tasks.
+```bash
+pip install -e ".[explain]"
+```
 
-* **Ingestion**
-  * Chunk Embedding
-  * Topic Modelling
-  * Vector DB Indexing
-* **Training**
-  * Query Embedding
-  * Chunk Retrieval Evaluation
-  * KDE Training
-* **Inference**
-  * Ambiguity Scoring
-  * Feature Decider
+**Breaking change in 0.2.0** — KDE feature names use the paper-aligned persistence
+metrics (`w1_h0`, `lt_max_h1`). Retrain KDE models produced before this release.
 
-## Usage
-
-### Ingestion
-
-For more detailed information on the configurations please refer to the [configurations section](#configurations).
-The docname parameter is an optional parameter in the embedder and clusterer step and is used as a filename where the embedded chunks and topics will be saved to. The default value of the parameter is **_document_**, the resulting save file will look like `{docname}_chunk_embeddings.pkl` and `{docname}_chunk_topics.pkl` respectively.
-**Important:** Ensure that your hash_key is unique! This will be used during the inference step to map the chunks to the correct topic features.
+## Quickstart
 
 ```py
-import pandas
+import pandas as pd
 
-from blowfish.ingestion import NaiveChunksEmbedding
-from blowfish.ingestion import TopicClusterGenerator
-from blowfish.ingestion import FaissVDBIndexing
+from blowfish.ingestion import NaiveChunksEmbedding, TopicClusterGenerator, FaissVDBIndexing
+from blowfish.training import BulkQueriesEmbedder, BulkQueriesEvaluator, DisambiguationModelGenerator
+from blowfish.inference import AmbiguityScorer, FeedbackDecider
 
-# AzureOpenAIEmbeddings Configuration Example
-azure_openai_config = {
-                        "deployment": <model_name>,
-                        "openai_api_key": <token>,
-                        "azure_endpoint": <endpoint>,
-                        "openai_api_version": <version>
-                        }
-
-# Sentence Transformers Configuration Example:
-sentence_transformer_config = {
-                               "model_name_or_path": "sentence-transformers/all-mpnet-base-v2"
-                               # Add other sentence transformers config here
-                               }
-
-# Configuration Example Using a Sentence Transformer Model
 configuration = {
-                  "llm_encoder_config": sentence_transformer_config,
-                  "vdb_vector_size": 768,
-                  "llm_encoder_type": "sentence_transformer",
-                  "top_k_results": 5,
-                  "vdb_type": "faiss_index"
-                  }
+    "llm_encoder_config": {"model_name_or_path": "sentence-transformers/all-mpnet-base-v2"},
+    "llm_encoder_type": "sentence_transformer",
+    "vdb_vector_size": 768,
+    "vdb_type": "faiss_index",
+    "vdb_metric": "cosine",        # paper convention; "l2" remains for legacy indexes
+    "top_k_results": 50,           # paper k; warning fires below 15
+}
 
-# Ingestion Module
-chunks_embedder = NaiveChunksEmbedding(**configuration)
-clusterer = TopicClusterGenerator()
-indexer = FaissVDBIndexing(**configuration)
+# --- Ingestion: build the chunk embedding store -----------------------------
+chunks_df = pd.read_csv(...)                          # columns: Text, docname, hash_key (unique!)
+embedded_chunks = NaiveChunksEmbedding(**configuration)(chunks_df, docname="example_doc")
+topics_df = TopicClusterGenerator()(embedded_chunks, docname="example_doc")
+vector_index, vector_mapping = FaissVDBIndexing(**configuration)(topics_df)
 
-# load your dataframe containing columns: ['Text', 'docname', 'hash_key']
-chunks_df = pd.read_csv(...)
+# --- Training: fit the KDE on a Q&A set -------------------------------------
+qa_training_data = pd.read_csv(...)                   # columns: query, answer, docname
+embedded_queries = BulkQueriesEmbedder(**configuration)(qa_training_data)
+query_eval = BulkQueriesEvaluator(**configuration)(embedded_queries, topics_df)
+queries_features, balanced_features, kde = DisambiguationModelGenerator()(query_eval)
 
-embedded_chunks = chunks_embedder(chunks_df, docname='example_doc')
-topics_df = clusterer(embedded_chunks, docname='example_doc')
-vector_index, vector_mapping = indexer(topics_df)
-```
-
-### Training
-
-The training data should be a Q&A set where the answer will be the chunk that the question was derived from. (Question & Source Chunk might be a better name here)
-The list of possible features are listed in the [KDE Features section](#kde-features).
-**Important**: ensure that the value in the docname field in your Q&A training set matches the value in the docname field in the topics dataframe. The query evaluation process will use string comparison to match these strings. Different values (e.g. `document1.pdf` vs `document1`) will result in incorrect evaluation.
-
-```py
-from blowfish.training import BulkQueriesEmbedder
-from blowfish.training import BulkQueriesEvaluator
-from blowfish.training import DisambiguationModelGenerator
-
-# Training Module
-queries_embedder = BulkQueriesEmbedder(**configuration)
-queries_evaluator = BulkQueriesEvaluator(**configuration)
-model_generator = DisambiguationModelGenerator(**configuration)
-
-# load your training data containing columns: ['query', 'answer', 'docname']
-qa_training_data = pd.read_csv(...)
-
-embedded_queries = queries_embedder(qa_training_data)
-query_eval = queries_evaluator(embedded_queries, topics_df)  # topics_df should be the generated topics from the ingestion step
-queries_features, balanced_queries_features, kernel_density = model_generator(query_eval)  # kde will be saved locally as a .pkl file in this step
-```
-
-### Inference
-
-The **full topics dataframe** and the **KDE model** is required for inference. If you have different topics dataframe as a result of multiple documents from the ingestion step, be sure to combine them together to get the full topics dataframe.
-
-The clarity score obtained from `scorer.run_scoring(features_df)` represents the ambiguity or answerability of the question given the chunks. A higher score is better.
-
-The decider uses [SHapley Additive exPlanations](https://shap.readthedocs.io/en/latest/) to determine which features contribute the most to the clarity scores. The idea behind the decider is gain visibility into what is causing the ambiguity and we leave this section up to the user on how they would like to utilize this information.
-
-The output from the decider will be one of: "topicspread", "docspread", and "dataspread".
-
-"topicspread" measures the number of unique topics the retrieved chunks contain. This topic of a chunk is determined from the clustering step.
-
-"docspread", short for document spread, measures the number of documents the retrieved chunks come from.
-
-"dataspread" is returned if other features such as the topological features contributes the most to the ambiguity.
-
-```py
-import pickle
-from blowfish.inference import AmbiguityScorer
-from blowfish.inference import FeedbackDecider
-
-kde = pickle.load(...)         # Load saved KDE from training step
-topics_df = pickle.load(...)   #  Load saved topics Dataframe from ingestion step
-
+# --- Inference: score a new query ------------------------------------------
 scorer = AmbiguityScorer(kde, topics_df)
 decider = FeedbackDecider(kde)
 
-""" 
-  Create features df from the query and the data from the retrieval step
-  An example of this df could be found in the [Example Inputs Visualized] section below
-  The features df must contain the columns:
-  ['topn_docname', 'topn_scores', 'topn_rank', 'query_embedding', 'chunk_embeddings', 'hash_key']
-"""
-features_df = ...   # the combined dataframe
-clarity_score, query_features, chunks_with_topics =  scorer.run_scoring(features_df)
-
-# Obtain most relevant feature contributing to clarity score
+features_df = ...                                     # topn_docname, topn_scores, topn_rank,
+                                                      # query_embedding, chunk_embeddings, hash_key
+clarity_score, query_features, chunks_with_topics = scorer.run_scoring(features_df)
 explanation = decider.explain_query(query_features)
 ```
 
-## Model Support
+A higher `clarity_score` is better. `explanation` is one of `topicspread`,
+`docspread`, or `dataspread`, indicating the largest SHAP contributor.
 
-We currently support embeddings models with the following classes out of the box:
+### Paper Eq. (1) ε neighborhood (TASK-004)
 
-* SentenceTransformer
-* OpenAIEmbeddings
-* AzureOpenAIEmbeddings
+`AmbiguityScorer(..., epsilon=...)` and
+`DisambiguationModelGenerator(epsilon=...)` accept an optional ε that
+subsamples retrieved neighbors before VR persistence runs (paper §3.2).
+`epsilon=None` (default) preserves pre-0.3 behavior. The paper's axis
+convention is `ε = d(i,q) − 1`; this kwarg takes `d(i,q)` directly, so the
+paper's `ε = 0.4` corresponds to `epsilon=1.4` here.
 
-If you want to use custom models, navigate to _[blowfish/utils/embedding_models_factory.py](/blowfish/utils/embedding_models_factory.py)_ and add your own class there that implements the `encode()` function. The encode function should return a numpy array of the embeddings.
+## Model support
 
-## Configurations
+Out of the box: `SentenceTransformer`, `OpenAIEmbeddings`, `AzureOpenAIEmbeddings`.
+Custom models: subclass in
+[`blowfish/utils/embedding_models_factory.py`](./blowfish/utils/embedding_models_factory.py)
+implementing `encode() -> np.ndarray`.
 
-### Required Parameters
+## Configuration reference
 
-| Name                       | Description                                                                                  |
-| :------------------------- | :------------------------------------------------------------------------------------------- |
-| llm_encoder_config         | configuration to instantiate LLM from base class                                             |
-| llm_encoder_type           | wrapper name from [embedding_models_factory.py](/blowfish/utils/embedding_models_factory.py) |
-| top_k_results              | Number of chunks retrieved by retriever                                                      |
-| vdb_type                   | vector db type (only faiss is supported at the moment)                                       |
-| vdb_vector_size            | Size of embeddings generated by model                                                        |
+The configuration dictionary is shared across the ingestion, training, and
+inference modules. Required keys: `llm_encoder_config`, `llm_encoder_type`,
+`top_k_results`, `vdb_type`, `vdb_vector_size`. Use the same `top_k_results`
+and `vdb_metric` end-to-end; rebuild the index if `vdb_metric` changes (`l2`
+vs. `cosine`).
 
-### Optional Parameters
+| Optional key | Default | Notes |
+|---|---|---|
+| `embeddings_storage_dir` | `./` | Where chunk embedding pickles go |
+| `topics_storage_dir` | `./` | Where topic pickles go |
+| `vdb_path` | `./faiss.index` | FAISS index path |
+| `json_index_path` | `./index.json` | hash_key → faiss-row sidecar |
+| `vdb_reset_faiss_index` | `False` | Overwrite existing index |
+| `vdb_metric` | `l2` | `cosine` aligns with the paper; `l2` is legacy |
+| `kde_storage_name` | `disambiguator_kde.pkl` | KDE pickle filename |
+| `disable_ssl` | `False` | For OpenAI client behind corporate proxies |
 
-| Name                       | Description                                                                 |
-| :------------------------- | :-------------------------------------------------------------------------- |
-| embeddings_storage_dir     | directory where chunk embeddings df will be saved (defaults to `./`)        |
-| topics_storage_dir         | directory where topics df will be saved (defaults to `./`)                  |
-| vdb_path                   | Path where vdb is saved (defaults to `./faiss.index`)                       |
-| json_index_path            | Path where json index is saved (defaults to `./index.json`)                 |
-| vdb_reset_faiss_index      | Whether to overwrite existing (defaults to `False`)                         |
-| kde_storage_name           | name of file where KDE will be stored (defaults to `disambiguator_kde.pkl`) |
-| disable_ssl                | disables ssl ~ used for OpenAI Models (defaults to `False`)                 |
+## KDE features
 
-## KDE Features
+`scale_mean`, `scale_min`, `iq25-75_scale`, `w1_h0`, `lt_max_h1`,
+`top_k_doc_spread`, `top_k_topic_spread`, `silhouette_score_mean`,
+`silhouette_score_std`.
 
-| Feature name              |
-| :------------------------ |
-| scale_mean                |
-| scale_min                 |
-| iq25-75_scale             |
-| max_homology_birth        |
-| mean_homology_birth       |
-| std_homology_birth        |
-| mean_homology1st_birth    |
-| mean_homology1st_lifetime |
-| top_k_docspread           |
-| top_k_topic_spread        |
-| silhouette_score_mean     |
-| silhouette_score_std      |
+`w1_h0` and `lt_max_h1` follow arXiv:2406.07990 (`W₁(H₀)` with `(N-1)^{-1}`
+normalization; `LT_max(H₁)` half-life). Older keys
+(`max_homology_birth`, `mean_homology1st_lifetime`, …) are still computed if
+you keep them in `kde_features_order`.
 
-## Example Inputs Visualized
+## Tests
 
-### [chunks_df](#ingestion)
-
-The information here is sourced from the respective wiki pages for the plants [Iris](https://en.wikipedia.org/wiki/Iris_(plant)) & [Osmanthus](https://en.wikipedia.org/wiki/Osmanthus)
-
-| Text                                                                                                                             | docname           | hash_key |
-| :------------------------------------------------------------------------------------------------------------------------------- | :---------------- | :------- |
-| Nearly all Iris species are found in temperate Northern Hemisphere zones, from Europe to Asia and across North America.          | iris-faq.pdf      | df634a   |
-| The Iris genus takes its name from the Greek word for rainbow.                                                                   | iris-faq.pdf      | 2aa64c   |
-| ...                                                                                                                              | ...               | ...      |
-| The generic name Osmanthus is composed of two parts: the Greek words osma meaning smell or fragrance, and anthos meaning flower. | osmanthus-faq.pdf | 850752   |
-
-### [qa_training_data](#training)
-
-The answer here refers to the chunk which contains the information for the question.
-
-| question                                        | answer                                                                  | docname           |
-| :---------------------------------------------- |  :--------------------------------------------------------------------- | :---------------- |
-| Where does the Iris species take its name from? | The Iris genus takes its name from the Greek word for rainbow.          | iris-faq.pdf      |
-| ...                                             | ...                                                                     | ...               |
-| Where is osmanthus flavored Pepsi sold?         | PepsiCo makes osmanthus flavored Pepsi for the Chinese domestic market. | osmanthus-faq.pdf |
-
-### [features_df](#inference)
-
-In the case of top-5 chunk retrieval, 
-
-| topn_docname      | topn_scores | topn_rank | query_embedding | chunk_embeddings | hash_key |
-| :---------------- | :---------- | :-------- | :-------------- | :--------------- | :------- |
-| iris-faq.pdf      | 0.30298     | 0         | [-0.347.., ...] | [0.637.., ...]   | 34ad12   |
-| iris-faq.pdf      | 0.33102     | 1         | [-0.347.., ...] | [0.238.., ...]   | 1821aa   |
-| ...               | ...         | ...       | ...             | ...              | ...      |
-| osmanthus-faq.pdf | 0.36275     | 4         | [-0.347.., ...] | [0.711.., ...]   | d1ua2k   |
-
-## Contribution
-
-We welcome and appreciate all contributions! Please feel free to suggest enhancements, report issues, or submit pull requests.
-
-## License
-
-Copyright ©2024 BlackRock, Inc. or its affiliates. All rights reserved. Distributed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
-
-## Credits
-
-The implementation of blowfish is a collaborative effort between Javier Makmuri, Thomas R. Barillot, and Alex De Castro.
-
-## Citation
-
-If you found this work helpful, a shout-out in your citations would be very much appreciated! 😊
-
+```bash
+pip install -r requirements-dev.txt
+pip install -e .
+pytest tests/
 ```
+
+CI is described in [`.github/workflows/README.md`](./.github/workflows/README.md).
+
+## Documentation map
+
+- [`PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md`](./PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md) — paper-level critique, statistical-test program, RAG experimental design (**start here**).
+- [`docs/review/`](./docs/review/README.md) — per-module engineering review, TASK-001…TASK-206 spec, methodology trace.
+
+## Contribution, license, citation
+
+Pull requests welcome — please ensure `pytest` passes locally.
+
+Copyright ©2024 BlackRock, Inc. Distributed under the
+[Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
+```bibtex
 @misc{barillot2024blowfishtopologicalstatisticalsignatures,
-      title={Blowfish: Topological and statistical signatures for quantifying ambiguity in semantic search}, 
-      author={Thomas Roland Barillot and Alex De Castro},
-      year={2024},
-      eprint={2406.07990},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2406.07990}, 
+  title         = {Blowfish: Topological and statistical signatures for quantifying ambiguity in semantic search},
+  author        = {Thomas Roland Barillot and Alex De Castro},
+  year          = {2024},
+  eprint        = {2406.07990},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2406.07990}
 }
 ```
