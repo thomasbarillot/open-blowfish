@@ -1,0 +1,2 @@
+# Optional: FeedbackDecider (SHAP). Install with: pip install -e ".[explain]"
+shap>=0.44.1

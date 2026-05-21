@@ -19,7 +19,7 @@ import pandas as pd
 import pickle
 
 from pydantic import BaseModel, Field
-from typing import List, ClassVar, Tuple
+from typing import List, ClassVar, Optional, Tuple
 from sklearn.neighbors import KernelDensity
 from sklearn.utils import shuffle
 
@@ -34,6 +34,10 @@ class DisambiguationModelGenerator(BaseModel):
 
     kde_storage_path: str = Field(default="./")
     kde_storage_name: str = Field(default="disambiguator_kde.pkl")
+    #: Paper Eq. (1) ε neighborhood (TASK-004). ``None`` preserves the
+    #: pre-TASK-004 single-scale VR behavior; a positive float filters
+    #: neighbors with ``||Δv_iq|| / ||Δv_0q|| <= epsilon`` before VR.
+    epsilon: Optional[float] = Field(default=None)
     
     class Config:
         arbitrary_types_allowed = True
@@ -84,25 +88,26 @@ class DisambiguationModelGenerator(BaseModel):
         return expanded_qa_eval_df
 
 
-    def generate_queries_features(self, 
+    def generate_queries_features(self,
                                   dataframe: pd.DataFrame,
                                   kde_features_order: List[str] = DEFAULT_KDE_FEATURES) -> pd.DataFrame:
         """
-            Generats the relevant features for the queries
+            Generates the relevant features for the queries. ``self.epsilon``
+            (TASK-004) is forwarded to the VR feature path.
         """
         queries_features = []
         for _, sub_df in dataframe.groupby("query_id"):
             sub_df = sub_df.sort_values(by="rank").drop_duplicates(["docname", "query_id", "score", "rank"])
-            
+
             # skip if the query only has 1 retrieved chunk
             if len(sub_df) < 2:
                 continue
-            
+
             features = {
                         "query_id": sub_df.iloc[0]["query_id"],
                         "correct_prediction": int(sub_df.iloc[0]["chunk_match"])
                         }
-            derived_features = calculate_relevant_features(sub_df, kde_features_order)
+            derived_features = calculate_relevant_features(sub_df, kde_features_order, epsilon=self.epsilon)
             features.update(derived_features)
 
             queries_features.append(pd.DataFrame(features, index=[0]))
