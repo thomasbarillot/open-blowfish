@@ -72,7 +72,11 @@ def calculate_first_order_homology_distribution(
         if len(holes_lifetimes) == 0:
             ltmax_h1 = np.nan
         else:
-            ltmax_h1 = np.max(holes_lifetimes)
+            # Paper Eq. (3): LT_max(H₁) = sup |y − γ⊥(y)|. Under the L∞ projection
+            # convention disclosed in Appendix A.2, the diagonal projection
+            # distance for an H₁ point (b, d) is (d − b) / 2 — i.e. the half-life,
+            # not the full lifetime. Match the paper's value exactly.
+            ltmax_h1 = np.max(holes_lifetimes) / 2.0
 
         entropy_range = np.arange(0.0, 1.1, 0.01)
         h, _ = np.histogram(neighbour_0th_homology, bins=entropy_range, density=True)
@@ -86,8 +90,13 @@ def calculate_first_order_homology_distribution(
         homology_distribution = {
             "max_homology_birth": np.max(neighbour_0th_homology),
             "mean_homology_birth": np.mean(neighbour_0th_homology),
+            # Paper Eq. (2): W₁(H₀) = (1/(N−1)) · Σ |y − γ⊥(y)|, where N is the
+            # number of points in the H₀ diagram. For K input points there are
+            # K−1 finite H₀ bars; the [:-1] slice above already excludes the
+            # infinite bar, so ``len(neighbour_0th_homology)`` equals N−1.
+            # Divide by that count (not one less) to match the paper exactly.
             "w1_h0": np.sum(np.abs(neighbour_0th_homology - neighbour_0th_homology / 2.0))
-            / (len(neighbour_0th_homology) - 1),
+            / len(neighbour_0th_homology),
             "std_homology_birth": np.std(neighbour_0th_homology),
             "mean_homology1st_birth": np.mean(neighbour_1st_homology, axis=0)[0],
             "mean_homology1st_lifetime": np.mean(holes_lifetimes),
