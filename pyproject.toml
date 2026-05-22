@@ -1,29 +1,121 @@
 [project]
-name = "blowfish"
-version = "0.0.1"
-description = "Homology driven RAG"
+name = "open-blowfish"
+version = "0.3.0"
+description = "Topological + statistical signatures for quantifying ambiguity in semantic search. Open-source fork of blackrock/blowfish."
 authors = [
-    {name = "Thomas Barillot, Alex De Castro"}
+    {name = "Alex De Castro"},
+    {name = "Thomas-Roland Barillot"},
+    {name = "Javier Makmuri"},
 ]
-license = "MIT"
+license = "Apache-2.0"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = [
-    "numpy (>=2.4.6,<3.0.0)",
-    "pandas (==2.2.2)",
-    "python-dotenv (==1.0.1)",
-    "umap-learn (==0.5.5)",
-    "hdbscan (==0.8.33)",
-    "faiss-cpu (==1.8.0)",
-    "httpx (==0.27.0)",
-    "levenshtein (==0.25.1)",
-    "sentence-transformers (==2.7.0)",
-    "giotto-tda (==0.6.0)",
-    "numba (==0.65.1)",
-    "pynndescent (==0.5.11)",
-    "shap (==0.43.0)"
+requires-python = ">=3.10"
+keywords = [
+    "vector search",
+    "RAG",
+    "explainability",
+    "polysemy",
+    "ambiguity",
+    "persistent homology",
+    "topological data analysis",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 
+dependencies = [
+    # Mirrors blowfish/requirements.txt — runtime deps that the core
+    # ingestion / training / inference pipelines import unconditionally.
+    "python-dotenv==1.0.1",
+    "umap-learn==0.5.5",
+    "hdbscan==0.8.33",
+    "faiss-cpu==1.8.0",
+    "httpx==0.27.0",
+    "levenshtein==0.25.1",
+    "sentence-transformers==2.7.0",
+    "pandas==2.2.2",
+    "giotto-tda==0.6.2",
+    "langchain-openai==0.1.7",
+    "numba==0.59.0",
+    "pynndescent==0.5.11",
+]
+
+[project.urls]
+"Bug Reports" = "https://github.com/thomasbarillot/open-blowfish/issues"
+"Source" = "https://github.com/thomasbarillot/open-blowfish"
+"Upstream" = "https://github.com/blackrock/blowfish"
+"Paper" = "https://arxiv.org/abs/2406.07990"
+
+[project.optional-dependencies]
+# SHAP-driven feature attribution for FeedbackDecider. Optional so the
+# default install stays lean and shap-free; the import is lazy.
+explain = [
+    "shap>=0.43",
+]
+
+# Statistical evaluation toolkit: AUROC / AUPRC / Brier / NLL / ECE,
+# BCa + paired bootstrap, KS, Wasserstein-1 permutation, isotonic / Platt
+# calibration, Wilson-CI reliability diagrams, Bonferroni / Holm.
+evaluation = [
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+]
+
+# Manifest-driven multi-corpus / multi-chunker / multi-embedder dataset
+# infrastructure with per-source runtime fetchers (Wikipedia / Wikisource /
+# Wikinews / Chronicling America / HuggingFace cc_news).
+datasets = [
+    "pyarrow>=14",
+    "requests>=2.31",
+    "pysbd>=0.3.4",
+    # ``<0.3`` pin is required for coexistence with ``langchain-openai==0.1.7``
+    # above; both transitively pull ``langchain-core`` and the 0.3+ family
+    # breaks the legacy openai / azure-openai embedding adapters.
+    "langchain-text-splitters>=0.2,<0.3",
+    "tiktoken>=0.7",
+    "datasets>=2.16,<4",
+]
+
+# RAG harness + G0–G6 gating policies. The harness itself has no extra
+# runtime deps; SDK-backed generators live behind their own extras below.
+rag = []
+
+# Optional LLM SDK adapters for the RAG harness. Lazy-imported by
+# GeneratorHooks; missing one only breaks the corresponding adapter.
+anthropic = [
+    "anthropic>=0.30",
+]
+openai = [
+    "openai>=1.30",
+]
+
+# Convenience extra — union of the above. Useful for CI / reproducible
+# experiment runs.
+all = [
+    "shap>=0.43",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pyarrow>=14",
+    "requests>=2.31",
+    "pysbd>=0.3.4",
+    "langchain-text-splitters>=0.2,<0.3",
+    "tiktoken>=0.7",
+    "datasets>=2.16,<4",
+    "anthropic>=0.30",
+    "openai>=1.30",
+]
+
+[project.scripts]
+blowfish = "blowfish.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
