@@ -74,7 +74,16 @@ class ExactMatchJudge:
 
 
 class F1Judge:
-    """Token-level F1. ``correct`` when F1 ≥ threshold (default 0.5)."""
+    """SQuAD-style token-level F1 with multiset (bag-of-tokens) matching.
+
+    True positives count duplicates: predicted ``"the the cat"`` against gold
+    ``"the cat"`` gives TP = min(predicted["the"], gold["the"]) +
+    min(predicted["cat"], gold["cat"]) = 1 + 1 = 2. This matches the
+    canonical SQuAD-v1.1 evaluator; the earlier set-based implementation
+    over-counted repeated tokens.
+
+    ``correct`` when F1 ≥ ``threshold`` (default 0.5).
+    """
 
     name: ClassVar[str] = "f1"
 
@@ -88,18 +97,20 @@ class F1Judge:
         gold: str,
         record: Optional[RetrievalRecord] = None,
     ) -> JudgeResult:
+        from collections import Counter
         p_toks = _normalize(predicted).split()
         g_toks = _normalize(gold).split()
-        if not g_toks:
-            f1 = 0.0
-        elif not p_toks:
+        if not g_toks or not p_toks:
             f1 = 0.0
         else:
-            p_set, g_set = set(p_toks), set(g_toks)
-            tp = len(p_set & g_set)
-            precision = tp / len(p_set)
-            recall = tp / len(g_set)
-            f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+            common = Counter(p_toks) & Counter(g_toks)
+            tp = sum(common.values())
+            if tp == 0:
+                f1 = 0.0
+            else:
+                precision = tp / len(p_toks)
+                recall = tp / len(g_toks)
+                f1 = 2 * precision * recall / (precision + recall)
         em = int(_normalize(predicted) == _normalize(gold))
         return JudgeResult(em=em, f1=float(f1), correct=f1 >= self.threshold)
 

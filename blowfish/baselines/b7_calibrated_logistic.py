@@ -31,20 +31,20 @@ class CalibratedLogisticBaseline(Baseline):
         self.scaler: Optional[StandardScaler] = None
         self.classifier: Optional[LogisticRegression] = None
         self.calibrator: Optional[CalibratedScorer] = None
-        self._feature_cache: dict[int, np.ndarray] = {}
 
     def _featurize(self, records: Sequence[RetrievalRecord]) -> np.ndarray:
-        key = id(records)
-        if key in self._feature_cache:
-            return self._feature_cache[key]
+        # Previously cached on ``id(records)`` — removed because (a) CPython
+        # reuses ids of freed objects so it could return stale features,
+        # and (b) gate-wrapped callers (``tune_threshold``,
+        # ``RAGHarness.run``) pass a fresh single-element list each call,
+        # so the cache never hit on the slow path. Featurization is the
+        # real cost; a proper batched API is a separate follow-up.
         rows = []
         for r in records:
             df = to_legacy_query_df(r)
             feats = calculate_relevant_features(df, self.feature_order)
             rows.append([feats[k] for k in self.feature_order])
-        out = np.asarray(rows, dtype=np.float64)
-        self._feature_cache[key] = out
-        return out
+        return np.asarray(rows, dtype=np.float64)
 
     def fit(self, records: Sequence[RetrievalRecord], labels: LabelVector) -> None:
         X = self._featurize(records)

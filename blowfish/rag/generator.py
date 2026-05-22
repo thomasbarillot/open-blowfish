@@ -60,26 +60,37 @@ class EchoGenerator:
         return GenerationResult(text=text, latency_ms=latency_ms, model=self.name, usage={})
 
 
-class GeneratorHooks:
-    """Class-attribute registry mirroring ``VDBHooks``.
+class _GeneratorHooksMeta(type):
+    """Metaclass providing class-level ``__getattr__`` for lazy adapter imports.
 
-    Optional adapters are lazy descriptors that raise ``ImportError`` with a
-    remediation hint if the corresponding extra is not installed.
+    Python only consults ``__getattr__`` on instances by default; for
+    class-attribute lookup (``GeneratorHooks.anthropic``) the resolver
+    has to live on the metaclass.
     """
 
-    echo: ClassVar = EchoGenerator
-
-    @classmethod
     def __getattr__(cls, name: str) -> Any:  # noqa: D401
         if name == "anthropic":
             from blowfish.rag.adapters.anthropic_adapter import AnthropicGenerator
-
             return AnthropicGenerator
         if name == "openai":
             from blowfish.rag.adapters.openai_adapter import OpenAIGenerator
-
             return OpenAIGenerator
-        raise AttributeError(f"No generator registered under {name!r}")
+        raise AttributeError(
+            f"No generator registered under {name!r}. "
+            f"Known: {ALL_GENERATOR_NAMES}"
+        )
+
+
+class GeneratorHooks(metaclass=_GeneratorHooksMeta):
+    """Class-attribute registry mirroring ``VDBHooks``.
+
+    Optional adapters are lazy-imported via the metaclass: accessing
+    ``GeneratorHooks.anthropic`` triggers the import only on first use, and
+    raises ``ImportError`` with a remediation hint if the ``[anthropic]``
+    extra is not installed.
+    """
+
+    echo: ClassVar = EchoGenerator
 
 
 ALL_GENERATOR_NAMES = ("echo", "anthropic", "openai")

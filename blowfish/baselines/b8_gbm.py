@@ -27,20 +27,17 @@ class GBMBaseline(Baseline):
         self.feature_order = list(feature_order or DEFAULT_KDE_FEATURES)
         self.random_state = int(random_state)
         self.classifier: Optional[GradientBoostingClassifier] = None
-        self._feature_cache: dict[int, np.ndarray] = {}
 
     def _featurize(self, records: Sequence[RetrievalRecord]) -> np.ndarray:
-        key = id(records)
-        if key in self._feature_cache:
-            return self._feature_cache[key]
+        # No id()-keyed cache — see b7_calibrated_logistic._featurize for
+        # the rationale (cache was both unsafe and ineffective on the slow
+        # path).
         rows = []
         for r in records:
             df = to_legacy_query_df(r)
             feats = calculate_relevant_features(df, self.feature_order)
             rows.append([feats[k] for k in self.feature_order])
-        out = np.asarray(rows, dtype=np.float64)
-        self._feature_cache[key] = out
-        return out
+        return np.asarray(rows, dtype=np.float64)
 
     def fit(self, records: Sequence[RetrievalRecord], labels: LabelVector) -> None:
         X = self._featurize(records)

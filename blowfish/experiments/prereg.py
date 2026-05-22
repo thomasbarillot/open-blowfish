@@ -54,7 +54,13 @@ class PreregPlan(BaseModel):
     cost_model: CostModel = Field(default_factory=CostModel)
     sensitivity_grid: dict[str, list[Any]] = Field(default_factory=dict)
     exclusion_criteria: list[str] = Field(default_factory=list)
-    win_threshold: float = 0.02
+    # Default 0.03 — at n=1000 the paired-bootstrap CI half-width for
+    # ΔAUROC commonly runs 0.02–0.03, so a 0.02 threshold sits inside the
+    # noise band and cannot be reliably distinguished from zero. Raise
+    # further if your test set is smaller than 1000 queries; the prereg
+    # template in PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md §6 keeps the older
+    # 0.02 value as illustrative but the safer default lives here.
+    win_threshold: float = 0.03
     schema_version: int = 1
     locked_at: Optional[str] = None
     locked_git_sha: Optional[str] = None

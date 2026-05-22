@@ -15,7 +15,12 @@ def ks_two_sample(x: np.ndarray, y: np.ndarray) -> tuple[float, float]:
 def wasserstein1_permutation(
     x: np.ndarray, y: np.ndarray, *, n_perm: int = 1000, seed: int = 0
 ) -> tuple[float, float]:
-    """Wasserstein-1 distance + two-sided permutation p-value."""
+    """Wasserstein-1 distance + one-sided permutation p-value.
+
+    W₁ is non-negative and the permutation null centers near 0, so the
+    natural test is one-sided (``H_a: W₁ > 0``). The returned p-value is
+    the add-one (Phipson–Smyth) estimator ``(n_perm_ge + 1) / (n_perm + 1)``.
+    """
     x_arr = np.asarray(x, dtype=np.float64)
     y_arr = np.asarray(y, dtype=np.float64)
     observed = float(stats.wasserstein_distance(x_arr, y_arr))
