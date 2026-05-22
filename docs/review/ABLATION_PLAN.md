@@ -6,22 +6,29 @@
 
 ## 1. Feature ablations
 
-| Run ID | Topology (VR) | KDE features | Notes |
-|--------|---------------|--------------|-------|
-| A0 | Off (zeros / omit columns) | Full non-topology only | Retrieval + spread + silhouette |
-| A1 | On | Full | Current target after TASK-001 fixes |
-| A2 | On | Topology only + label | **Ill-conditioned** — expect poor |
-| A3 | Off | **Score-only** baseline vector | Strong comparator |
+Implemented as a sweep over `blowfish.experiments.ExperimentRunner.run_baselines`
+with `feature_order` restricted per row (drive via the
+`blowfish.calculations.calculate_relevant_features(kde_features_order=…)` knob).
 
----
+| Run ID | Topology (VR) | KDE features | Notes |
+|---|---|---|---|
+| A0 | Off (omit `w1_h0`, `lt_max_h1`) | Full non-topology only | Retrieval + spread + silhouette |
+| A1 | On | Full | Current default |
+| A2 | On | Topology only + label | **Ill-conditioned** — expect poor |
+| A3 | Off | Score-only baseline vector | Strong comparator |
 
 ## 2. Randomized / placebo controls
 
-| Run ID | Procedure | Pass criterion |
-|--------|-----------|----------------|
-| R0 | Shuffle VR features across queries within split | AUROC ≈ 0.5 — if real signal exists, shuffled should collapse |
-| R1 | Random Gaussian noise with matched variance replaces VR block | Same |
-| R2 | Permute neighbor order within each query | Invariant check — outputs should not depend on order unless bug |
+Implemented in `blowfish.experiments.controls`. Each function takes a list of
+`RetrievalRecord` (or a feature DataFrame for R2) and returns a permuted
+version on which the AUROC test should collapse if the topology signal is
+real.
+
+| Run ID | Procedure | Implementation | Pass criterion |
+|---|---|---|---|
+| R0 | Pool every chunk across queries, deal out random top-k bags | [`controls.py:permute_neighborhoods`](../../blowfish/experiments/controls.py) | AUROC ≈ 0.5; non-collapse indicates corpus-wide contamination |
+| R1 | Apply one random orthogonal rotation Q to every embedding | [`controls.py:rotate_embeddings`](../../blowfish/experiments/controls.py) | Topology features invariant within numerical tolerance — failure is an implementation bug |
+| R2 | Within a feature DataFrame, permute a specified block of columns across rows | [`controls.py:shuffle_feature_block`](../../blowfish/experiments/controls.py) | AUROC drop ≥ effect of the block; if not, the block isn't contributing |
 
 ---
 

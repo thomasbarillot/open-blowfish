@@ -437,17 +437,39 @@ Falsification criteria:
 
 | Workstream | Status | Blocks |
 |---|---|---|
-| Plot / test rigor (§2, §3) | **Not started** — needs paper rewrite + figure regeneration | Paper v3 |
-| Baselines B0–B9 (§4.1) | **Spec only** (`docs/review/AGENTIC_REMEDIATION_SPEC.md` TASK-103) | RAG experiment, all comparisons |
-| Feature ablations (§4.2) | **Spec only** (`docs/review/ABLATION_PLAN.md`, template) | Topology contribution claim |
-| Randomized topology controls (§4.3) | **Not started** | Honesty check |
-| RAG experiment harness (§5) | **Not started** — package has no `experiments/` module yet | All downstream claims |
-| Pre-registration (§6) | **Not started** | Reviewer credibility |
+| Plot / test rigor (§2, §3) | **Code-ready** — primitives implemented in `blowfish/evaluation/` (`metrics`, `bootstrap`, `distributional`, `calibration`, `splits`, `multipletest`); paper figure regeneration remains paper-side | Paper v3 |
+| Baselines B0–B9 (§4.1) | **Implemented** — `blowfish/baselines/b0..b9_*.py`; `BaselineHooks` registry; CLI: `python -m blowfish.experiments.bench_baselines --dummy` | — |
+| Feature ablations (§4.2) | **Implemented as A0–A3** — drive via `kde_features_order` knob through `ExperimentRunner.run_baselines`; see `docs/review/ABLATION_PLAN.md` §1 | — |
+| Randomized topology controls (§4.3) | **Implemented as R0/R1/R2** — `blowfish/experiments/controls.py` (`permute_neighborhoods`, `rotate_embeddings`, `shuffle_feature_block`); see `docs/review/ABLATION_PLAN.md` §2 | — |
+| RAG experiment harness (§5) | **Implemented** — `blowfish/rag/` (Generator Protocol, EchoGenerator, G0–G6 gates, cost model, judges, harness, metrics) + `blowfish/experiments/ExperimentRunner.run_rag`; CLI: `python -m blowfish.experiments.bench_rag --dummy` | — |
+| Pre-registration (§6) | **Implemented** — code-level lock via `blowfish/experiments/prereg.py` (`PreregPlan` + `lock` + `verify_lock` + `PreregViolation`); lock file in `~/.cache/blowfish/prereg/` | — |
 | Length-confound stratification (`TASK-008`) | **Open — paper task** | H3 in §3.1 |
 | ε sweep on real corpora | **Code ready** (`TASK-004` landed); needs data harness | F2 replacement figure |
+| End-to-end experiment runs filling `BASELINE_RESULTS.md` | **Open** — code lands the surface; numbers still need running on a real corpus | METHODOLOGY_REVIEW §5 verdict |
 
-Single most valuable next step: implement the **B0 / B4 / B5 / B9** baselines
-(cheap, cover the discriminative-vs-density question) and run them on a small
-public split (e.g. NQ-open dev) end-to-end. The result either validates the
-paper direction with numbers or surfaces the gap honestly — both are
-publishable.
+## How to reproduce
+
+After installing the relevant extras:
+
+```bash
+pip install -e ".[evaluation,datasets,rag]"
+```
+
+The two CLI smoke commands exercise the full pipeline on synthetic fixtures:
+
+```bash
+python -m blowfish.experiments.bench_baselines --dummy --bootstrap 500 --seed 0
+python -m blowfish.experiments.bench_rag --dummy --gates G0,G1,G2,G3,G5,G6 --seed 0
+```
+
+For a real corpus, instantiate `blowfish.evaluation.RetrievalRecord` objects
+(either from the manifest-driven `Corpus` API in `blowfish.datasets` or from
+your own retriever), then drive `blowfish.experiments.ExperimentRunner`
+directly. See `docs/review/BASELINE_RESULTS.md` "How to run" for the typed
+sequence.
+
+The pre-registration is enforced at code level: before reading the test
+split, an experiment run must `blowfish.experiments.lock(plan)` and
+`verify_lock(plan)` against a `PreregPlan` matching the published template
+(§6). The lock file is content-addressed in `~/.cache/blowfish/prereg/`;
+mutating the plan after locking raises `PreregViolation`.

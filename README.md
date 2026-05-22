@@ -18,10 +18,16 @@ pip install -r blowfish/requirements.txt
 pip install -e .
 ```
 
-Optional SHAP explanations (`FeedbackDecider`):
+Optional extras:
 
 ```bash
-pip install -e ".[explain]"
+pip install -e ".[explain]"      # SHAP for FeedbackDecider
+pip install -e ".[evaluation]"   # AUROC, bootstrap, KS/Wasserstein, calibration
+pip install -e ".[datasets]"     # Manifest-driven corpora (Wikipedia, Wikinews, Chronicling America, …) + chunkers + sweep cache
+pip install -e ".[rag]"          # RAG harness + G0–G6 gating policies
+pip install -e ".[anthropic]"    # Optional Anthropic SDK adapter
+pip install -e ".[openai]"       # Optional OpenAI SDK adapter
+pip install -e ".[all]"          # Everything above
 ```
 
 **Breaking change in 0.2.0** — KDE feature names use the paper-aligned persistence
@@ -116,15 +122,41 @@ normalization; `LT_max(H₁)` half-life). Older keys
 (`max_homology_birth`, `mean_homology1st_lifetime`, …) are still computed if
 you keep them in `kde_features_order`.
 
+## Evaluation & RAG benchmark
+
+The `blowfish.evaluation`, `blowfish.baselines`, `blowfish.datasets`, `blowfish.rag`,
+and `blowfish.experiments` subpackages together implement the falsifiable
+evaluation program in
+[`PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md`](./PAPER_FEEDBACK_AND_RAG_EXPERIMENT.md):
+B0–B9 baselines, G0–G6 gating policies, code-level pre-registration, and R0/R1/R2
+randomized topology controls.
+
+Two CLIs cover the smoke surface:
+
+```bash
+# B0–B9 baselines on a 24-query synthetic fixture (AUROC ± 95% CI table):
+python -m blowfish.experiments.bench_baselines --dummy --bootstrap 500 --seed 0
+
+# G0/G1/G2/G3/G5/G6 gating policies on a 20-query RAG fixture (per-gate utility):
+python -m blowfish.experiments.bench_rag --dummy --gates G0,G1,G2,G3,G5,G6 --seed 0
+```
+
+For real-corpus runs, build `blowfish.evaluation.RetrievalRecord` objects (the
+manifest-driven `Corpus` API helps populate them) and drive
+`blowfish.experiments.ExperimentRunner` directly — the CLIs are minimal by
+design.
+
 ## Tests
 
 ```bash
 pip install -r requirements-dev.txt
-pip install -e .
+pip install -e ".[evaluation,datasets,rag]"
 pytest tests/
 ```
 
-CI is described in [`.github/workflows/README.md`](./.github/workflows/README.md).
+CI is described in [`.github/workflows/README.md`](./.github/workflows/README.md);
+the optional extras matrix runs via
+[`.github/workflows/ci-extras.yml`](./.github/workflows/ci-extras.yml).
 
 ## Documentation map
 

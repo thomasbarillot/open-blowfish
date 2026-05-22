@@ -1,0 +1,38 @@
+name: CI extras
+
+on:
+  push:
+    branches: [main, "feature/**", "review/**", "fix/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-extras:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        extra: [evaluation, datasets, rag, anthropic, openai, all]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            blowfish/requirements.txt
+            requirements-dev.txt
+            blowfish/requirements-evaluation.txt
+            blowfish/requirements-datasets.txt
+            blowfish/requirements-rag.txt
+            blowfish/requirements-explain.txt
+      - name: Install dev requirements
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+      - name: Install with [${{ matrix.extra }}] extra
+        run: python -m pip install -e ".[${{ matrix.extra }}]"
+        continue-on-error: ${{ matrix.extra == 'anthropic' || matrix.extra == 'openai' }}
+      - name: Run tests
+        run: python -m pytest tests/ -q --tb=short
+        continue-on-error: ${{ matrix.extra == 'anthropic' || matrix.extra == 'openai' }}
