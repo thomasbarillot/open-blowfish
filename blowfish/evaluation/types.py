@@ -18,7 +18,12 @@ LabelVector: TypeAlias = np.ndarray
 
 
 class RetrievedChunk(BaseModel):
-    """One retrieved chunk's worth of information for a single query."""
+    """One retrieved chunk's worth of information for a single query.
+
+    ``text`` is optional; baselines and gates that only need geometric signals
+    (B0–B6, G0–G6 except G4/G5) operate on ``chunk_embedding`` alone. The RAG
+    harness (Phase 4) requires ``text`` to populate LLM context.
+    """
 
     model_config = ConfigDict(arbitrary_types_allowed=True, extra="ignore")
 
@@ -27,19 +32,25 @@ class RetrievedChunk(BaseModel):
     chunk_embedding: np.ndarray
     score: float
     rank: int
+    text: Optional[str] = None
     topic_label: Optional[str] = None
     silhouette_score: Optional[float] = None
     gold_match: Optional[bool] = None
 
 
 class RetrievalRecord(BaseModel):
-    """Per-query record: query embedding + top-k retrieved chunks + optional label."""
+    """Per-query record: query embedding + top-k retrieved chunks + optional label.
+
+    ``query_text`` is optional but required by the RAG harness to construct the
+    LLM prompt; baselines and gates work without it.
+    """
 
     model_config = ConfigDict(arbitrary_types_allowed=True, extra="ignore")
 
     query_id: str
     query_embedding: np.ndarray
     top_k: list[RetrievedChunk]
+    query_text: Optional[str] = None
     gold_chunk_hash: Optional[str] = None
     gold_text: Optional[str] = None
     stratum: Optional[str] = None
