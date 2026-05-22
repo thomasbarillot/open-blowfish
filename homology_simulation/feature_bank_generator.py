@@ -3,6 +3,8 @@ import random
 import traceback
 from hashlib import sha256
 
+from typing import Dict, List, Optional, Any
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -17,7 +19,7 @@ from tqdm import tqdm
 # ============================================================================
 
 
-def _generate_orthogonal_features(max_features, d, seed):
+def _generate_orthogonal_features(max_features, d, seed) -> dict[str, np.ndarray]:
     """
     Generate a dictionary of orthogonal binary feature vectors.
 
@@ -59,23 +61,25 @@ def _generate_orthogonal_features(max_features, d, seed):
     return feature_bank
 
 
-def _generate_single_dim_orthogonal_features(max_features, d, seed):
+def _generate_single_dim_orthogonal_features(max_features: int, d: int, seed: int) -> dict[int, np.ndarray]:
+    """Generate a dictionary of orthogonal binary feature vectors.
+
+    Parameters
+    ----------
+    max_features:
+        Number of feature vectors to generate.
+    d:
+        Dimension of the embedding space.
+    seed:
+        Random seed for reproducibility.
+
+    Returns
+    -------
+    dict[int, np.ndarray]
+        A mapping from feature identifier to a normalized binary vector.
     """
-    Generate a dictionary of orthogonal binary feature vectors.
 
-    Each feature is a normalized binary vector in d-dimensional space.
-    Vectors are approximately orthogonal (binary constraint introduces small error).
-
-    Args:
-        max_features: Number of feature vectors to generate
-        d: Dimension of embedding space
-        seed: Random seed for reproducibility
-
-    Returns:
-        Dictionary mapping feature_id -> normalized binary vector (d,)
-    """
-
-    feature_bank = {}
+    feature_bank: dict[int, np.ndarray] = {}
     for i in range(max_features):
         binary_vector = np.zeros(d)
         binary_vector[i] = 1.0
@@ -84,7 +88,7 @@ def _generate_single_dim_orthogonal_features(max_features, d, seed):
     return feature_bank
 
 
-def _build_covariance_matrices(feature_bank, d):
+def _build_covariance_matrices(feature_bank, d) -> np.ndarray:
     """
     Build covariance matrix from features.
 
@@ -127,16 +131,46 @@ class ClusterNode:
     that include inherited features (subset from parent) and optionally new features.
     """
 
-    def __init__(self, depth, n_features, n_new_features=0, parent=None):
+    def __init__(self, depth: int, n_features: int, n_new_features: int = 0, parent: ClusterNode | None = None) -> None:
+        """Create a new :class:`ClusterNode`.
+
+        Parameters
+        ----------
+        depth:
+            Tree depth of the node (root is ``0``).
+        n_features:
+            Number of inherited features for this node.
+        n_new_features:
+            Number of new features added at this node.
+        parent:
+            Reference to the parent :class:`ClusterNode` if any.
+        """
         self.id = hex(random.getrandbits(128))[2:]
         self.depth = depth  # Tree depth (0 = root)
         self.n_features = n_features
         self.n_new_features = n_new_features
         self.children: list[ClusterNode] = []  # List of child ClusterNode objects
-        self.parent: ClusterNode = parent  # List of parent cluster IDs from root to here
+        self.parent: ClusterNode | None = parent  # Reference to the parent cluster
 
-    def format_datapoint_instance(self, X, features_ids, type="parent", **kwargs):
+    def format_datapoint_instance(self, X: np.ndarray, features_ids: np.ndarray, type: str = "parent", **kwargs) -> dict:
+        """Return a dictionary representation of a datapoint.
 
+        Parameters
+        ----------
+        X:
+            The embedding vector for the datapoint.
+        features_ids:
+            The feature identifiers that contributed to ``X``.
+        type:
+            The type of the node (e.g. ``"parent"`` or ``"child"``).
+        **kwargs:
+            Additional keyword arguments that are merged into the dictionary.
+
+        Returns
+        -------
+        dict
+            A dictionary containing the node metadata and the datapoint.
+        """
         return {
             "depth": self.depth,
             "n_features": self.n_features + self.n_new_features,
@@ -246,3 +280,4 @@ class FeaturesGenerator:
         ]
 
         return datapoints
+
