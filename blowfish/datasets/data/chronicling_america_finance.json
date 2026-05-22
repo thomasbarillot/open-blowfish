@@ -1,0 +1,9 @@
+{
+  "name": "chronicling_america_finance",
+  "version": "v1",
+  "description": "Period US financial newspapers from the Library of Congress 'Chronicling America' archive (1900–1925, public domain). Pulled by query against the LoC Newspaper Search API for financial keywords; each document is one OCR'd page. Closest open-license equivalent to old WSJ/FT issues (actual WSJ/FT archives are paywalled and not redistributable).",
+  "license": "public-domain",
+  "source": "loc_chronicling_america",
+  "bootstrap_recipe": "chronicling_america_finance",
+  "documents": []
+}

@@ -1,0 +1,112 @@
+{
+  "_schema_version": 1,
+  "_corpus_name": "fields_medalists",
+  "_description": "Fields Medalist laudatio + lecture transcripts. Manifest format: each entry is {doc_id, title, year, medalist, mirror_urls[], sha256, license}. Suggested primary sources: mathunion.org IMU awards archive (laudatios), arXiv preprints by the medalists, ICM proceedings (PDF → text); mirrors: en.wikisource.org, archive.org. Populate `documents[]` before running on real data; tests use monkey-patched downloads.",
+  "_license_note": "Many IMU laudatios are open-access; ICM lecture papers vary. Record the per-document license in `license` before redistributing.",
+  "documents": [
+    {
+      "doc_id": "tao_2006",
+      "title": "Terence Tao",
+      "year": 2006,
+      "medalist": "Terence Tao",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Terence_Tao&oldid=1354721747"
+      ],
+      "sha256": "f3f8a07a39921107889b464fd9e05dba130302b681c07ae788d95e44269612b3",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1354721747
+    },
+    {
+      "doc_id": "perelman_2006",
+      "title": "Grigori Perelman",
+      "year": 2006,
+      "medalist": "Grigori Perelman",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Grigori_Perelman&oldid=1354872927"
+      ],
+      "sha256": "864442e5149783278b87a0740b216fd157e3b7936f20308689406e57c73b3d0e",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1354872927
+    },
+    {
+      "doc_id": "mirzakhani_2014",
+      "title": "Maryam Mirzakhani",
+      "year": 2014,
+      "medalist": "Maryam Mirzakhani",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Maryam_Mirzakhani&oldid=1353990574"
+      ],
+      "sha256": "be3d722f5db32060cd5214ee9ffe87e0ab3844d8cae1f1de575136e9f1a37665",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1353990574
+    },
+    {
+      "doc_id": "villani_2010",
+      "title": "Cédric Villani",
+      "year": 2010,
+      "medalist": "Cédric Villani",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Cédric_Villani&oldid=1351569388"
+      ],
+      "sha256": "90a77c1c93bec1aa9b65158f7daceeaec172cc73a1bf2fc6a3782147f44931f2",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1351569388
+    },
+    {
+      "doc_id": "bhargava_2014",
+      "title": "Manjul Bhargava",
+      "year": 2014,
+      "medalist": "Manjul Bhargava",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Manjul_Bhargava&oldid=1343129202"
+      ],
+      "sha256": "36384c9deebc57df723a5718d91bf22e556ed2a0b1d9d60b2ac9d9220331098b",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1343129202
+    },
+    {
+      "doc_id": "venkatesh_2018",
+      "title": "Akshay Venkatesh",
+      "year": 2018,
+      "medalist": "Akshay Venkatesh",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Akshay_Venkatesh&oldid=1355165830"
+      ],
+      "sha256": "764698a330388790d25331cd71b3222397830fad823b7c24528f133560cb6dc9",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1355165830
+    },
+    {
+      "doc_id": "birkar_2018",
+      "title": "Caucher Birkar",
+      "year": 2018,
+      "medalist": "Caucher Birkar",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Caucher_Birkar&oldid=1338906346"
+      ],
+      "sha256": "1e0fef0d500780181d8af194c929c7061d47c0d55a432098b647907b4c225912",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1338906346
+    },
+    {
+      "doc_id": "viazovska_2022",
+      "title": "Maryna Viazovska",
+      "year": 2022,
+      "medalist": "Maryna Viazovska",
+      "mirror_urls": [
+        "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&titles=Maryna_Viazovska&oldid=1346958052"
+      ],
+      "sha256": "e1739e0a1be96272d0bb21542e1e7e773ccc3a79a461160bbc1786ed6312e287",
+      "license": "CC-BY-SA-4.0",
+      "source": "wikipedia",
+      "oldid": 1346958052
+    }
+  ]
+}

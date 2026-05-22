@@ -1,0 +1,7 @@
+{
+  "_schema_version": 1,
+  "_corpus_name": "britannica_1911",
+  "_description": "Encyclopædia Britannica 11th edition (1911), public domain, transcribed on Wikisource. Manifest format: each entry is {doc_id, title, article, mirror_urls[], sha256, license, source, oldid}. Populated by scripts/bootstrap_corpora.py.",
+  "_license_note": "All entries are public-domain (1911 publication, US copyright expired). Mirror URLs point at en.wikisource.org transcriptions, pinned to specific oldids.",
+  "documents": []
+}

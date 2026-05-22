@@ -1,0 +1,14 @@
+# Optional `datasets` extra: reproducible multi-corpus / multi-chunker /
+# multi-embedder dataset infrastructure for the experimental pipeline.
+pyarrow>=14
+requests>=2.31
+pysbd>=0.3.4
+# Pin <0.3 so this extra coexists with the legacy langchain-openai==0.1.7 in
+# blowfish/requirements.txt (both transitively pull langchain-core; 0.3+
+# upgrades break the legacy openai/azure-openai embedding adapters).
+langchain-text-splitters>=0.2,<0.3
+tiktoken>=0.7
+# HuggingFace datasets, needed by scripts/bootstrap_corpora.py for the
+# cc_news_finance corpus. Lazy-imported, so missing it only breaks that one
+# bootstrap recipe, not the rest of the dataset layer.
+datasets>=2.16,<4

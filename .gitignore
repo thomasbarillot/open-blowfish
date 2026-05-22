@@ -152,6 +152,14 @@ override.tf.json
 #
 # !example_override.tf
 
+# Blowfish dataset cache. Downloaded lecture / corpus text lives at
+# ~/.cache/blowfish by default (outside the repo). If $BLOWFISH_CACHE_DIR
+# is pointed at an in-repo path (e.g. for dev visibility) use one of:
+data_local/
+.cache/blowfish/
+*.lectures.txt
+
+
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 

@@ -1,0 +1,2 @@
+# Developer / CI test runner (install alongside blowfish/requirements.txt).
+pytest>=8.0

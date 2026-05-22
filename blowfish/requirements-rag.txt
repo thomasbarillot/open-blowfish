@@ -1,0 +1,5 @@
+# Optional `rag` extra: gating policies + harness. The harness itself has no
+# new dependencies beyond the core requirements; this file exists so that
+# `pip install -e '.[rag]'` is a valid spelling parallel to [evaluation] and
+# [datasets]. Anthropic and OpenAI SDK adapters live behind separate
+# [anthropic] / [openai] extras to keep the import surface minimal.

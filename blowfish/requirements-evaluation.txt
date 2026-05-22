@@ -1,0 +1,6 @@
+# Optional `evaluation` extra: statistical metrics, bootstrap, KS/Wasserstein,
+# calibration. Most of these arrive transitively via giotto-tda /
+# sentence-transformers in the base requirements, but pinning them here keeps
+# ``pip install -e ".[evaluation]"`` self-contained in a minimal venv.
+scipy>=1.11
+scikit-learn>=1.3
